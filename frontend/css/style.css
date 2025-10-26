@@ -23,7 +23,7 @@ canvas {
 .chat .container {
   position: absolute;
   left: 50%;
-  top: 65%;
+  top: 80%;
   transform: translate(-50%, -10%);
   margin: auto;
   text-align: center;
@@ -59,12 +59,102 @@ canvas {
   padding: 0 20px;
   max-height: 200px;
   overflow-y: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .chat .container #response::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  width: 6px;
+}
+
+.chat .container #response::-webkit-scrollbar-track {
+  background: rgba(0, 50, 100, 0.3);
+  border-radius: 3px;
+}
+
+.chat .container #response::-webkit-scrollbar-thumb {
+  background: #0ff;
+  border-radius: 3px;
+}
+
+.chat .container #response::-webkit-scrollbar-thumb:hover {
+  background: #5ff;
+}
+
+/* Multi-Window HUD Styles */
+.aura-hud-window {
+  position: fixed;
+  background: rgba(0, 30, 60, 0.95);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 12px;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.4),
+    0 0 5px rgba(0, 255, 255, 0.6) inset,
+    0 8px 32px rgba(0, 0, 0, 0.5);
+  color: #0ff;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.aura-hud-window:hover {
+  box-shadow: 
+    0 0 25px rgba(0, 255, 255, 0.5),
+    0 0 8px rgba(0, 255, 255, 0.7) inset,
+    0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* Minimized Windows Container (bottom-right) */
+.hud-minimized-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.hud-minimized-item {
+  background: rgba(0, 50, 100, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hud-minimized-item:hover {
+  background: rgba(0, 70, 140, 0.95);
+  border-color: #0ff;
+  box-shadow: 
+    0 0 15px rgba(0, 255, 255, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.4);
+  transform: translateX(-5px);
+}
+
+.minimized-icon {
+  color: #0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minimized-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0ff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  letter-spacing: 0.5px;
 }
 
 /* HUD Styles */
@@ -93,20 +183,30 @@ canvas {
 
 .hud-header {
   cursor: move;
-  padding: 8px 12px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  padding: 12px 16px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  background: transparent;
+  background: rgba(0, 50, 100, 0.5);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.hud-header:hover {
+  background: rgba(0, 70, 140, 0.6);
 }
 
 .hud-title {
   font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-  text-shadow: 0 0 5px #0ff;
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.8);
+  text-transform: uppercase;
+  color: #0ff;
+  flex: 1;
 }
 
 .hud-controls {
@@ -116,35 +216,42 @@ canvas {
 
 .hud-btn {
   background: rgba(0, 255, 255, 0.1);
-  border: 1px solid #0ff;
+  border: 1px solid rgba(0, 255, 255, 0.5);
   color: #0ff;
-  padding: 4px 8px;
+  padding: 6px;
   border-radius: 4px;
-  font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.2s ease;
-  text-shadow: 0 0 5px #0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
 }
 
 .hud-btn:hover {
   background: rgba(0, 255, 255, 0.3);
-  box-shadow: 0 0 10px #0ff;
+  border-color: #0ff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  transform: scale(1.1);
 }
 
-.hud-close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px;
+.hud-btn svg {
+  filter: drop-shadow(0 0 3px rgba(0, 255, 255, 0.8));
+}
+
+.hud-minimize {
+  margin-right: 4px;
 }
 
 .hud-content {
-  padding: 16px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-height: 400px;
   overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 500px; /* Maximum height before scrolling kicks in */
 }
 
 .hud-content::-webkit-scrollbar {
@@ -404,12 +511,14 @@ canvas {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.75rem;
+  table-layout: auto; /* Allow table to expand based on content */
+  white-space: nowrap; /* Prevent text wrapping in cells */
 }
 
 .hud-table-header {
   background: rgba(0, 255, 255, 0.1);
   border: 1px solid rgba(0, 255, 255, 0.3);
-  padding: 8px 6px;
+  padding: 8px 12px;
   text-align: left;
   font-weight: 700;
   text-transform: uppercase;
@@ -447,7 +556,7 @@ canvas {
 
 .hud-table-cell {
   border: 1px solid rgba(0, 255, 255, 0.15);
-  padding: 8px 6px;
+  padding: 8px 12px;
   color: #e0faff;
   vertical-align: top;
 }

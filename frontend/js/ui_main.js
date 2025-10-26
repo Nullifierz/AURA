@@ -55,12 +55,11 @@ async function sendQuery(query) {
         const data = await response.json();
         console.log("Received response:", data.response);
         
-        // Update HUD if sections are available
+        // Update HUD if sections are available - creates a new window automatically
         if (data.hud_sections && data.hud_sections.length > 0) {
             if (window.auraHUD) {
-                console.log("Updating HUD with tool data:", data.hud_sections);
+                console.log("Creating new HUD window with tool data:", data.hud_sections);
                 window.auraHUD.renderContent({ sections: data.hud_sections });
-                window.auraHUD.show(); // Auto-show HUD when data is available
             }
         }
         

@@ -1,21 +1,27 @@
 # # Python-generated files
-# __pycache__/
-# *.py[oc]
-# build/
-# dist/
-# wheels/
-# *.egg-info
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
 
 # # Virtual environments
 # .venv
 
 # # Configuration files with secrets
-# config.yaml
-# *.secret.yaml
+config.yaml
+*.secret.yaml
 .env
 *.env
 .venv
 data/
+
+# # Database files (To-Do App and other apps)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
 
 # # Credentials and tokens
 settings/credentials.json

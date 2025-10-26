@@ -1,34 +1,80 @@
-// hud.js - Dynamic Head Up Display for AURA
+// hud.js - Dynamic Head Up Display for AURA (Multi-Window Enhanced)
 
 class HUD {
     constructor() {
-        this.hudContainer = null;
-        this.isVisible = false;
-        this.isDragging = false;
-        this.dragOffset = { x: 0, y: 0 };
-        this.sections = []; // Store dynamic sections
+        this.windows = new Map(); // Store multiple HUD windows: windowId -> window object
+        this.nextWindowId = 1;
+        this.highestZIndex = 1000; // Track highest z-index for window stacking
+        this.minimizedContainer = null; // Container for minimized windows
         
         this.init();
     }
 
     init() {
-        // Create HUD structure
-        this.createHUD();
-        this.setupEventListeners();
+        // Create minimized windows container
+        this.createMinimizedContainer();
         
-        console.log("Dynamic HUD initialized");
+        console.log("Multi-Window Dynamic HUD initialized");
     }
 
-    createHUD() {
-        // Create HUD container
-        this.hudContainer = document.createElement('div');
-        this.hudContainer.id = 'aura-hud';
-        this.hudContainer.className = 'aura-hud hidden';
+    createMinimizedContainer() {
+        // Create container for minimized windows (bottom-right)
+        this.minimizedContainer = document.createElement('div');
+        this.minimizedContainer.id = 'hud-minimized-container';
+        this.minimizedContainer.className = 'hud-minimized-container';
+        document.body.appendChild(this.minimizedContainer);
+    }
+
+    /**
+     * Create a new HUD window
+     * @param {string} title - Window title
+     * @param {Object} data - Window data with sections
+     * @param {Object} options - Window options (position, size, etc.)
+     * @returns {string} Window ID
+     */
+    createWindow(title = "AURA HUD", data = null, options = {}) {
+        const windowId = `hud-window-${this.nextWindowId++}`;
         
-        this.hudContainer.innerHTML = `
-            <div class="hud-header" id="hud-header">
+        // Calculate spawn position (top-left or top-right, avoiding center)
+        const windowCount = this.windows.size;
+        const spawnRight = windowCount % 2 === 0; // Alternate between left and right
+        
+        // Default options
+        const defaultOptions = {
+            minWidth: 400,
+            maxWidth: 800,
+            maxHeight: 600, // Use maxHeight instead of fixed height
+            x: spawnRight ? window.innerWidth - 850 : 50, // Right side or left side (adjusted for max width)
+            y: 50 + (Math.floor(windowCount / 2) * 30), // Stack vertically
+            minHeight: 200
+        };
+        
+        const opts = { ...defaultOptions, ...options };
+        
+        // Create window element
+        const windowElement = document.createElement('div');
+        windowElement.id = windowId;
+        windowElement.className = 'aura-hud-window';
+        windowElement.style.cssText = `
+            left: ${opts.x}px;
+            top: ${opts.y}px;
+            min-width: ${opts.minWidth}px;
+            max-width: ${opts.maxWidth}px;
+            width: fit-content;
+            max-height: ${opts.maxHeight}px;
+            z-index: ${++this.highestZIndex};
+        `;
+        
+        windowElement.innerHTML = `
+            <div class="hud-header" data-window-id="${windowId}">
+                <div class="hud-title">${title}</div>
                 <div class="hud-controls">
-                    <button class="hud-btn hud-close" id="hud-close" title="Close">
+                    <button class="hud-btn hud-minimize" title="Minimize">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                        </svg>
+                    </button>
+                    <button class="hud-btn hud-close" title="Close">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
@@ -36,89 +82,250 @@ class HUD {
                 </div>
             </div>
             
-            <div class="hud-content" id="hud-content">
+            <div class="hud-content" id="${windowId}-content">
                 <div class="hud-loading"></div>
             </div>
         `;
         
-        document.body.appendChild(this.hudContainer);
+        document.body.appendChild(windowElement);
         
-        // Create toggle button
-        this.toggleBtn = document.createElement('button');
-        this.toggleBtn.id = 'toggle-hud-btn';
-        this.toggleBtn.className = 'hud-toggle-btn';
-        this.toggleBtn.textContent = 'HUD';
-        document.body.appendChild(this.toggleBtn);
+        // Store window data
+        const windowData = {
+            id: windowId,
+            element: windowElement,
+            title: title,
+            isMinimized: false,
+            isDragging: false,
+            dragOffset: { x: 0, y: 0 },
+            sections: [],
+            position: { x: opts.x, y: opts.y },
+            size: { width: opts.width, height: opts.height }
+        };
+        
+        this.windows.set(windowId, windowData);
+        
+        // Setup event listeners for this window
+        this.setupWindowEventListeners(windowId);
+        
+        // Render content if provided
+        if (data) {
+            this._renderWindowContent(windowId, data);
+        }
+        
+        // Animate in
+        this.animateWindowIn(windowId);
+        
+        return windowId;
     }
 
-    setupEventListeners() {
-        // Toggle button
-        this.toggleBtn.addEventListener('click', () => this.toggle());
+    setupWindowEventListeners(windowId) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData) return;
+        
+        const windowElement = windowData.element;
+        const header = windowElement.querySelector('.hud-header');
+        const minimizeBtn = windowElement.querySelector('.hud-minimize');
+        const closeBtn = windowElement.querySelector('.hud-close');
+        
+        // Click header to bring to front
+        header.addEventListener('click', (e) => {
+            if (!e.target.closest('.hud-btn')) {
+                this.bringToFront(windowId);
+            }
+        });
+        
+        // Minimize button
+        minimizeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.minimizeWindow(windowId);
+        });
         
         // Close button
-        const closeBtn = document.getElementById('hud-close');
-        closeBtn.addEventListener('click', () => this.hide());
+        closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            this.closeWindow(windowId);
+        });
         
         // Dragging
-        const header = document.getElementById('hud-header');
-        header.addEventListener('mousedown', (e) => this.startDrag(e));
-        document.addEventListener('mousemove', (e) => this.drag(e));
-        document.addEventListener('mouseup', () => this.stopDrag());
+        header.addEventListener('mousedown', (e) => {
+            if (!e.target.closest('.hud-btn')) {
+                this.startDrag(windowId, e);
+            }
+        });
+        
+        // Global mouse events for dragging
+        document.addEventListener('mousemove', (e) => this.drag(windowId, e));
+        document.addEventListener('mouseup', () => this.stopDrag(windowId));
     }
 
     /**
-     * Load HUD data from backend or accept data directly
-     * @param {Object|string} dataOrType - Either data object with sections or location string
+     * Bring window to front (highest z-index)
      */
-    async loadData(dataOrType = null) {
-        const contentContainer = document.getElementById('hud-content');
+    bringToFront(windowId) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData || windowData.isMinimized) return;
         
-        // If dataOrType is an object with sections, render directly
-        if (dataOrType && typeof dataOrType === 'object' && dataOrType.sections) {
-            console.log("Rendering HUD data directly:", dataOrType);
-            this.renderContent(dataOrType);
-            return;
+        windowData.element.style.zIndex = ++this.highestZIndex;
+    }
+
+    /**
+     * Minimize window to bottom-right container
+     */
+    minimizeWindow(windowId) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData || windowData.isMinimized) return;
+        
+        const windowElement = windowData.element;
+        
+        // Save current position
+        windowData.position = {
+            x: parseInt(windowElement.style.left),
+            y: parseInt(windowElement.style.top)
+        };
+        
+        // Create minimized representation
+        const minimizedItem = document.createElement('div');
+        minimizedItem.className = 'hud-minimized-item';
+        minimizedItem.dataset.windowId = windowId;
+        minimizedItem.innerHTML = `
+            <div class="minimized-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+                </svg>
+            </div>
+            <div class="minimized-title">${windowData.title}</div>
+        `;
+        
+        // Click to restore
+        minimizedItem.addEventListener('click', () => this.restoreWindow(windowId));
+        
+        this.minimizedContainer.appendChild(minimizedItem);
+        windowData.minimizedElement = minimizedItem;
+        
+        // Hide window with animation
+        windowElement.style.transition = 'all 0.3s ease-out';
+        windowElement.style.opacity = '0';
+        windowElement.style.transform = 'scale(0.8)';
+        
+        setTimeout(() => {
+            windowElement.style.display = 'none';
+            windowData.isMinimized = true;
+        }, 300);
+    }
+
+    /**
+     * Restore minimized window
+     */
+    restoreWindow(windowId) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData || !windowData.isMinimized) return;
+        
+        const windowElement = windowData.element;
+        
+        // Remove from minimized container
+        if (windowData.minimizedElement) {
+            windowData.minimizedElement.remove();
+            windowData.minimizedElement = null;
         }
         
-        // Otherwise, fetch from backend
-        try {
-            // Show loading state
-            contentContainer.innerHTML = '<div class="hud-loading">Loading data...</div>';
+        // Restore window
+        windowElement.style.display = 'block';
+        windowElement.style.left = windowData.position.x + 'px';
+        windowElement.style.top = windowData.position.y + 'px';
+        
+        // Animate in
+        setTimeout(() => {
+            windowElement.style.transition = 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
+            windowElement.style.opacity = '1';
+            windowElement.style.transform = 'scale(1)';
+            windowData.isMinimized = false;
             
-            // Build URL with optional location parameter
-            let url = 'http://localhost:8000/hud-data';
-            if (dataOrType && typeof dataOrType === 'string') {
-                url += `?location=${dataOrType}`;
-            }
-            
-            const response = await fetch(url);
-            
-            if (!response.ok) {
-                throw new Error('Failed to fetch HUD data');
-            }
-            
-            const data = await response.json();
-            
-            // Render the dynamic content
-            this.renderContent(data);
-            
-        } catch (error) {
-            console.error('Error loading HUD data:', error);
-            contentContainer.innerHTML = `
-                <div class="hud-error">
-                    <div class="error-icon">⚠️</div>
-                    <div class="error-text">Failed to load HUD data</div>
-                </div>
-            `;
+            // Bring to front
+            this.bringToFront(windowId);
+        }, 10);
+    }
+
+    /**
+     * Close window permanently
+     */
+    closeWindow(windowId) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData) return;
+        
+        const windowElement = windowData.element;
+        
+        // Remove minimized element if exists
+        if (windowData.minimizedElement) {
+            windowData.minimizedElement.remove();
+        }
+        
+        // Animate out
+        windowElement.style.transition = 'all 0.3s ease-out';
+        windowElement.style.opacity = '0';
+        windowElement.style.transform = 'scale(0.8)';
+        
+        setTimeout(() => {
+            windowElement.remove();
+            this.windows.delete(windowId);
+        }, 300);
+    }
+
+    startDrag(windowId, e) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData || windowData.isMinimized) return;
+        
+        windowData.isDragging = true;
+        const rect = windowData.element.getBoundingClientRect();
+        windowData.dragOffset = {
+            x: e.clientX - rect.left,
+            y: e.clientY - rect.top
+        };
+        
+        windowData.element.style.transition = 'none';
+        document.body.style.userSelect = 'none';
+        
+        // Bring to front when dragging starts
+        this.bringToFront(windowId);
+    }
+
+    drag(windowId, e) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData || !windowData.isDragging) return;
+        
+        let newLeft = e.clientX - windowData.dragOffset.x;
+        let newTop = e.clientY - windowData.dragOffset.y;
+        
+        // Boundary checks
+        const maxLeft = window.innerWidth - windowData.element.offsetWidth;
+        const maxTop = window.innerHeight - windowData.element.offsetHeight;
+        
+        newLeft = Math.max(0, Math.min(newLeft, maxLeft));
+        newTop = Math.max(0, Math.min(newTop, maxTop));
+        
+        windowData.element.style.left = newLeft + 'px';
+        windowData.element.style.top = newTop + 'px';
+    }
+
+    stopDrag(windowId) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData) return;
+        
+        if (windowData.isDragging) {
+            windowData.isDragging = false;
+            document.body.style.userSelect = '';
         }
     }
 
     /**
-     * Render dynamic content based on JSON structure
+     * Render dynamic content based on JSON structure (internal method)
+     * @param {string} windowId - Window ID
      * @param {Object} data - JSON data with sections array
      */
-    renderContent(data) {
-        const contentContainer = document.getElementById('hud-content');
+    _renderWindowContent(windowId, data) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData) return;
+        
+        const contentContainer = windowData.element.querySelector('.hud-content');
         contentContainer.innerHTML = '';
         
         if (!data.sections || data.sections.length === 0) {
@@ -126,7 +333,7 @@ class HUD {
             return;
         }
         
-        this.sections = data.sections;
+        windowData.sections = data.sections;
         
         // Sort sections: images first, then rest
         const sortedSections = [...data.sections].sort((a, b) => {
@@ -157,13 +364,7 @@ class HUD {
             sectionDiv.classList.add('hud-section-featured');
         }
         
-        // Add title if provided
-        if (section.title) {
-            const titleDiv = document.createElement('div');
-            titleDiv.className = 'hud-section-title';
-            titleDiv.textContent = section.title.toUpperCase();
-            sectionDiv.appendChild(titleDiv);
-        }
+        // Don't add section title - it's already in the window header
         
         // Create content based on type
         const contentDiv = document.createElement('div');
@@ -448,106 +649,97 @@ class HUD {
     }
 
     /**
-     * Update a specific section with new data
-     * @param {number} index - Section index
-     * @param {Object} newData - New section data
+     * Animate window in
      */
-    updateSection(index, newData) {
-        const sectionElement = document.getElementById(`hud-section-${index}`);
-        if (!sectionElement) return;
+    animateWindowIn(windowId) {
+        const windowData = this.windows.get(windowId);
+        if (!windowData) return;
         
-        const newSection = this.createSection(newData, index);
-        sectionElement.replaceWith(newSection);
-        this.sections[index] = newData;
-    }
-
-    show() {
-        if (!this.isVisible) {
-            this.hudContainer.classList.remove('hidden');
-            this.animateIn();
-            this.isVisible = true;
-        }
-    }
-
-    hide() {
-        if (this.isVisible) {
-            this.animateOut();
-            setTimeout(() => {
-                this.hudContainer.classList.add('hidden');
-            }, 300);
-            this.isVisible = false;
-        }
-    }
-
-    toggle() {
-        if (this.isVisible) {
-            this.hide();
-        } else {
-            this.show();
-        }
-    }
-
-    animateIn() {
-        this.hudContainer.style.opacity = '0';
-        this.hudContainer.style.transform = 'scale(0.95) translateY(-20px)';
+        const windowElement = windowData.element;
+        windowElement.style.opacity = '0';
+        windowElement.style.transform = 'scale(0.9)';
         
         setTimeout(() => {
-            this.hudContainer.style.transition = 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
-            this.hudContainer.style.opacity = '1';
-            this.hudContainer.style.transform = 'scale(1) translateY(0)';
+            windowElement.style.transition = 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
+            windowElement.style.opacity = '1';
+            windowElement.style.transform = 'scale(1)';
         }, 10);
     }
 
-    animateOut() {
-        this.hudContainer.style.transition = 'all 0.3s ease-out';
-        this.hudContainer.style.opacity = '0';
-        this.hudContainer.style.transform = 'scale(0.95) translateY(-20px)';
+    /**
+     * Show HUD - For backward compatibility, creates a new window
+     * @param {Object} data - Optional data to display
+     */
+    show(data = null) {
+        // Create a new window with data
+        const title = this._getTitleFromData(data);
+        return this.createWindow(title, data);
     }
 
-    startDrag(e) {
-        if (e.target.closest('.hud-close')) return;
-        
-        this.isDragging = true;
-        const rect = this.hudContainer.getBoundingClientRect();
-        this.dragOffset.x = e.clientX - rect.left;
-        this.dragOffset.y = e.clientY - rect.top;
-        
-        this.hudContainer.style.transition = 'none';
-        document.body.style.userSelect = 'none';
+    /**
+     * Render content - For backward compatibility with ui_main.js
+     * Creates a new window for each render call
+     */
+    renderContent(data) {
+        const title = this._getTitleFromData(data);
+        return this.createWindow(title, data);
     }
 
-    drag(e) {
-        if (!this.isDragging) return;
-        
-        let newLeft = e.clientX - this.dragOffset.x;
-        let newTop = e.clientY - this.dragOffset.y;
-        
-        // Boundary checks
-        const maxLeft = window.innerWidth - this.hudContainer.offsetWidth;
-        const maxTop = window.innerHeight - this.hudContainer.offsetHeight;
-        
-        newLeft = Math.max(0, Math.min(newLeft, maxLeft));
-        newTop = Math.max(0, Math.min(newTop, maxTop));
-        
-        this.hudContainer.style.left = newLeft + 'px';
-        this.hudContainer.style.top = newTop + 'px';
-    }
-
-    stopDrag() {
-        if (this.isDragging) {
-            this.isDragging = false;
-            document.body.style.userSelect = '';
+    /**
+     * Extract title from data sections
+     */
+    _getTitleFromData(data) {
+        if (!data || !data.sections || data.sections.length === 0) {
+            return "AURA HUD";
         }
+        
+        // Use first section title or derive from type
+        const firstSection = data.sections[0];
+        if (firstSection.title) {
+            return firstSection.title;
+        }
+        
+        // Generate title based on content type
+        const typeNames = {
+            'weather': 'Weather',
+            'calendar': 'Calendar',
+            'table': 'To-Do List',
+            'search': 'Search Results',
+            'keyvalue': 'Information'
+        };
+        
+        for (const [key, name] of Object.entries(typeNames)) {
+            if (firstSection.type === 'table' && firstSection.title && firstSection.title.includes('To-Do')) {
+                return 'To-Do List';
+            }
+            if (firstSection.title && firstSection.title.toLowerCase().includes(key)) {
+                return name;
+            }
+        }
+        
+        return "AURA HUD";
     }
 
-    updateSystemStatus(status) {
-        const audioStatus = document.getElementById('audio-status');
-        const vizStatus = document.getElementById('viz-status');
-        const connStatus = document.getElementById('connection-status');
-        
-        if (status.audio) audioStatus.textContent = status.audio;
-        if (status.visualizer) vizStatus.textContent = status.visualizer;
-        if (status.connection) connStatus.textContent = status.connection;
+    /**
+     * Get all open windows
+     */
+    getOpenWindows() {
+        return Array.from(this.windows.values()).filter(w => !w.isMinimized);
+    }
+
+    /**
+     * Get all minimized windows
+     */
+    getMinimizedWindows() {
+        return Array.from(this.windows.values()).filter(w => w.isMinimized);
+    }
+
+    /**
+     * Close all windows
+     */
+    closeAllWindows() {
+        const windowIds = Array.from(this.windows.keys());
+        windowIds.forEach(id => this.closeWindow(id));
     }
 }
 
@@ -560,7 +752,7 @@ function initHUD() {
     // Expose globally
     window.auraHUD = auraHUD;
     
-    console.log("HUD module loaded. Access via window.auraHUD");
+    console.log("Multi-Window HUD module loaded. Access via window.auraHUD");
 }
 
 if (document.readyState === 'loading') {

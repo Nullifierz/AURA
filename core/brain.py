@@ -198,6 +198,103 @@ class Brain:
             except Exception as e:
                 logger.error(f"Error processing search HUD data: {e}")
         
+        # To-Do App tools - create task list HUD section
+        elif tool_name in ["get_tasks", "search_tasks", "add_task", "update_task", "complete_task"]:
+            try:
+                # Import here to avoid circular dependency
+                from core.tools import get_tasks_data
+                
+                # Get filter parameters from tool args
+                status = tool_args.get("status")
+                priority = tool_args.get("priority")
+                category = tool_args.get("category")
+                limit = tool_args.get("limit", 10)
+                
+                tasks_data = get_tasks_data(status, priority, category, limit)
+                
+                if tasks_data['count'] > 0:
+                    # Create table data for tasks
+                    table_rows = []
+                    for task in tasks_data['tasks']:
+                        # Format priority with emoji
+                        priority_display = {
+                            'high': '🔴 HIGH',
+                            'medium': '🟡 MEDIUM',
+                            'low': '🟢 LOW'
+                        }.get(task['priority'], task['priority'].upper())
+                        
+                        # Format status with emoji
+                        status_display = {
+                            'pending': '⏳ Pending',
+                            'in_progress': '🔄 In Progress',
+                            'completed': '✅ Completed'
+                        }.get(task['status'], task['status'])
+                        
+                        # Format due date
+                        due_display = "No deadline"
+                        if task['due_date']:
+                            from datetime import datetime
+                            due_date = datetime.fromisoformat(task['due_date'])
+                            now = datetime.now()
+                            diff = (due_date - now).days
+                            
+                            if diff < 0:
+                                due_display = f"⚠️ {abs(diff)} day{'s' if abs(diff) > 1 else ''} overdue"
+                            elif diff == 0:
+                                due_display = "📅 Today"
+                            elif diff == 1:
+                                due_display = "📅 Tomorrow"
+                            else:
+                                due_display = due_date.strftime("%b %d, %Y")
+                        
+                        row_data = {
+                            "Priority": priority_display,
+                            "Task": task['title'],
+                            "Due Date": due_display,
+                            "Status": status_display
+                        }
+                        
+                        # Highlight high priority pending tasks
+                        if task['priority'] == 'high' and task['status'] == 'pending':
+                            row_data["_highlight"] = True
+                        
+                        table_rows.append(row_data)
+                    
+                    # Add statistics as key-value section
+                    stats = tasks_data['statistics']
+                    stats_items = []
+                    
+                    if 'pending' in stats:
+                        stats_items.append({"key": "⏳ Pending", "value": str(stats['pending'])})
+                    if 'in_progress' in stats:
+                        stats_items.append({"key": "🔄 In Progress", "value": str(stats['in_progress'])})
+                    if 'completed' in stats:
+                        stats_items.append({"key": "✅ Completed", "value": str(stats['completed'])})
+                    if 'overdue' in stats and stats['overdue'] > 0:
+                        stats_items.append({"key": "⚠️ Overdue", "value": str(stats['overdue'])})
+                    
+                    if stats_items:
+                        self.hud_sections.append({
+                            "title": "Task Statistics",
+                            "type": "keyvalue",
+                            "data": {
+                                "items": stats_items
+                            }
+                        })
+                    
+                    # Add task table
+                    self.hud_sections.append({
+                        "title": "To-Do List",
+                        "type": "table",
+                        "data": {
+                            "headers": ["Priority", "Task", "Due Date", "Status"],
+                            "rows": table_rows
+                        }
+                    })
+                    
+            except Exception as e:
+                logger.error(f"Error processing to-do HUD data: {e}")
+        
         # Time/Date tools - create time info section
         elif tool_name in ["get_time", "get_date"]:
             # Import here to avoid circular dependency
@@ -255,6 +352,12 @@ Available Tools:
 - get_time: Get current time in Indonesia (WIB)
 - get_date: Get today's date in Indonesia (WIB)
 - search_web: Search the web for information, news, facts, or any topic
+- add_task: Add a new task to the to-do list with optional priority, due date, category
+- get_tasks: Get tasks from to-do list with optional filters (status, priority, category)
+- update_task: Update an existing task's details
+- delete_task: Remove a task from the to-do list
+- complete_task: Mark a task as completed
+- search_tasks: Search tasks by keywords in title or description
 
 Tool Usage Guidelines:
 - "next event" / "closest schedule" / "what's next" → use get_calendar_events(max_results=1)
@@ -263,6 +366,10 @@ Tool Usage Guidelines:
 - "search for" / "look up" / "find information about" → use search_web(query="...", max_results=3, fetch_content=True)
 - For quick facts: search_web(max_results=3, fetch_content=False)
 - For analysis/summary/conclusion: search_web(max_results=3-5, fetch_content=True)
+- "add task" / "remember to" / "I need to" → use add_task(title="...", priority="medium", due_date="...")
+- "show my tasks" / "what's on my list" → use get_tasks() or get_tasks(status="pending")
+- "high priority tasks" → use get_tasks(priority="high")
+- "mark as done" / "I finished" → use complete_task(task_identifier="...")
 
 Response Guidelines:
 - Keep responses SHORT and conversational (1-2 sentences max)
@@ -290,6 +397,7 @@ General:
 - DO NOT repeat dates or full timestamps - the HUD shows complete details
 - After calling a tool, acknowledge briefly then LET THE HUD DO THE TALKING
 - For weather: "Clear skies in Jakarta, Sir. 28 degrees Celsius with light breeze." (HUD shows details)
+- For tasks: "I've added 'Buy groceries' to your list, Sir." or "You have 3 pending tasks." (HUD shows full list)
 - For numbers with units: Use full unit names for TTS clarity (e.g., "degrees Celsius" not "°C", "percent" not "%", "kilometers per hour" not "km/h")
 - If user speaks another language, understand but respond in English
 - Always maintain a professional yet friendly tone

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Window HUD Test - AURA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            background: #000;
+            color: #0ff;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+        }
+        .test-controls {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 50, 100, 0.9);
+            border: 1px solid #0ff;
+            border-radius: 8px;
+            padding: 20px;
+            z-index: 10000;
+        }
+        .test-controls h2 {
+            margin-top: 0;
+            color: #0ff;
+            text-shadow: 0 0 10px #0ff;
+        }
+        .test-btn {
+            background: rgba(0, 255, 255, 0.2);
+            border: 1px solid #0ff;
+            color: #0ff;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        .test-btn:hover {
+            background: rgba(0, 255, 255, 0.4);
+            box-shadow: 0 0 15px #0ff;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-controls">
+        <h2>🧪 Multi-Window HUD Test</h2>
+        
+        <div>
+            <button class="test-btn" onclick="testWeatherWindow()">Weather Window</button>
+            <button class="test-btn" onclick="testTodoWindow()">To-Do Window</button>
+            <button class="test-btn" onclick="testCalendarWindow()">Calendar Window</button>
+            <button class="test-btn" onclick="testSearchWindow()">Search Window</button>
+        </div>
+        
+        <div style="margin-top: 15px;">
+            <button class="test-btn" onclick="testMultiple()">Create 3 Windows</button>
+            <button class="test-btn" onclick="closeAll()">Close All</button>
+        </div>
+        
+        <div class="info">
+            <strong>Features to Test:</strong><br>
+            ✅ Multiple independent windows<br>
+            ✅ Drag windows around<br>
+            ✅ Click header to bring to front<br>
+            ✅ Minimize to bottom-right<br>
+            ✅ Click minimized to restore<br>
+            ✅ Close windows individually
+        </div>
+    </div>
+
+    <script src="js/hud.js" type="module"></script>
+    <script>
+        // Test data
+        const weatherData = {
+            sections: [
+                {
+                    title: "Current Conditions",
+                    type: "image",
+                    data: {
+                        url: "images/weather/clear-day.png",
+                        alt: "Clear sky",
+                        caption: "Clear sky"
+                    }
+                },
+                {
+                    title: "Weather - Tokyo, JP",
+                    type: "keyvalue",
+                    data: {
+                        items: [
+                            { key: "Temperature", value: "16.14°C" },
+                            { key: "Feels Like", value: "15.2°C" },
+                            { key: "Humidity", value: "65%" },
+                            { key: "Wind Speed", value: "3.5 m/s" }
+                        ]
+                    }
+                }
+            ]
+        };
+
+        const todoData = {
+            sections: [
+                {
+                    title: "Task Statistics",
+                    type: "keyvalue",
+                    data: {
+                        items: [
+                            { key: "⏳ Pending", value: "3" },
+                            { key: "🔄 In Progress", value: "1" },
+                            { key: "✅ Completed", value: "1" }
+                        ]
+                    }
+                },
+                {
+                    title: "To-Do List",
+                    type: "table",
+                    data: {
+                        headers: ["Priority", "Task", "Due Date", "Status"],
+                        rows: [
+                            {
+                                Priority: "🔴 HIGH",
+                                Task: "Buy groceries",
+                                "Due Date": "📅 Tomorrow",
+                                Status: "⏳ Pending",
+                                _highlight: true
+                            },
+                            {
+                                Priority: "🔴 HIGH",
+                                Task: "Finish AURA project",
+                                "Due Date": "Oct 31, 2025",
+                                Status: "⏳ Pending"
+                            },
+                            {
+                                Priority: "🟡 MEDIUM",
+                                Task: "Call dentist",
+                                "Due Date": "In 3 days",
+                                Status: "⏳ Pending"
+                            },
+                            {
+                                Priority: "🟢 LOW",
+                                Task: "Read Python docs",
+                                "Due Date": "No deadline",
+                                Status: "✅ Completed"
+                            }
+                        ]
+                    }
+                }
+            ]
+        };
+
+        const calendarData = {
+            sections: [
+                {
+                    title: "Upcoming Events",
+                    type: "table",
+                    data: {
+                        headers: ["Date", "Time", "Event"],
+                        rows: [
+                            {
+                                Date: "Today",
+                                Time: "14:00",
+                                Event: "Team Meeting",
+                                _highlight: true
+                            },
+                            {
+                                Date: "Today",
+                                Time: "16:30",
+                                Event: "Code Review"
+                            },
+                            {
+                                Date: "Tomorrow",
+                                Time: "10:00",
+                                Event: "Project Planning"
+                            }
+                        ]
+                    }
+                }
+            ]
+        };
+
+        const searchData = {
+            sections: [
+                {
+                    title: "Search: AI News",
+                    type: "list",
+                    data: {
+                        items: [
+                            {
+                                label: "OpenAI Develops Music Tool",
+                                value: "New AI tool generates high-quality music from text prompts",
+                                url: "https://example.com/news1"
+                            },
+                            {
+                                label: "Amazon Deploys Blue Jay Robots",
+                                value: "Warehouse automation reaches new heights with AI robotics",
+                                url: "https://example.com/news2"
+                            },
+                            {
+                                label: "AI Browser Agents Security",
+                                value: "Growing concerns about AI agent permissions and safety",
+                                url: "https://example.com/news3"
+                            }
+                        ]
+                    }
+                }
+            ]
+        };
+
+        // Test functions
+        function testWeatherWindow() {
+            window.auraHUD.createWindow("Weather", weatherData, {
+                width: 400,
+                height: 450
+            });
+        }
+
+        function testTodoWindow() {
+            window.auraHUD.createWindow("To-Do List", todoData, {
+                width: 500,
+                height: 500
+            });
+        }
+
+        function testCalendarWindow() {
+            window.auraHUD.createWindow("Calendar", calendarData, {
+                width: 450,
+                height: 400
+            });
+        }
+
+        function testSearchWindow() {
+            window.auraHUD.createWindow("Search Results", searchData, {
+                width: 500,
+                height: 450
+            });
+        }
+
+        function testMultiple() {
+            setTimeout(() => testWeatherWindow(), 0);
+            setTimeout(() => testTodoWindow(), 200);
+            setTimeout(() => testCalendarWindow(), 400);
+        }
+
+        function closeAll() {
+            window.auraHUD.closeAllWindows();
+        }
+
+        console.log("Multi-Window HUD Test loaded!");
+        console.log("Available commands:");
+        console.log("- testWeatherWindow()");
+        console.log("- testTodoWindow()");
+        console.log("- testCalendarWindow()");
+        console.log("- testSearchWindow()");
+        console.log("- testMultiple()");
+        console.log("- closeAll()");
+    </script>
+</body>
+</html>
