@@ -59,24 +59,12 @@ canvas {
   padding: 0 20px;
   max-height: 200px;
   overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .chat .container #response::-webkit-scrollbar {
-  width: 6px;
-}
-
-.chat .container #response::-webkit-scrollbar-track {
-  background: rgba(0, 50, 100, 0.3);
-  border-radius: 3px;
-}
-
-.chat .container #response::-webkit-scrollbar-thumb {
-  background: #0ff;
-  border-radius: 3px;
-}
-
-.chat .container #response::-webkit-scrollbar-thumb:hover {
-  background: #5ff;
+  display: none; /* Chrome, Safari, Opera */
 }
 
 /* Multi-Window HUD Styles */
