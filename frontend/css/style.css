@@ -1,0 +1,466 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bg-grid-lines {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-image:
+      linear-gradient(rgba(0, 150, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 150, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: 2;
+}
+
+.chat .container {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -10%);
+  margin: auto;
+  text-align: center;
+  z-index: 1000;
+}
+
+.chat .container input {
+  color: white;
+  width: 400px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+}
+
+.chat .container button {
+  display: none;
+}
+
+.chat .container #response {
+  margin-top: 10px; 
+  color: #aaa; 
+  font-size: 16px;
+  min-height: 20px;
+  transition: opacity 0.3s ease;
+  white-space: pre-line;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.chat .container #response::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* HUD Styles */
+.aura-hud {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  min-width: 25vw;
+  max-width: 40vw;
+  background: rgba(0, 50, 100, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 
+    0 0 15px rgba(0, 255, 255, 0.3),
+    0 0 5px rgba(0, 255, 255, 0.5) inset;
+  color: #0ff;
+  z-index: 2000;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.aura-hud.hidden {
+  display: none;
+}
+
+.hud-header {
+  cursor: move;
+  padding: 8px 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: transparent;
+}
+
+.hud-title {
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.hud-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.hud-btn {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #0ff;
+  color: #0ff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-shadow: 0 0 5px #0ff;
+}
+
+.hud-btn:hover {
+  background: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 10px #0ff;
+}
+
+.hud-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+.hud-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.hud-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.hud-content::-webkit-scrollbar-track {
+  background: rgba(0, 50, 100, 0.3);
+  border-radius: 3px;
+}
+
+.hud-content::-webkit-scrollbar-thumb {
+  background: #0ff;
+  border-radius: 3px;
+}
+
+.hud-content::-webkit-scrollbar-thumb:hover {
+  background: #5ff;
+}
+
+.hud-section {
+  margin-bottom: 12px;
+}
+
+.hud-section-title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  color: #0ff;
+  opacity: 0.7;
+}
+
+.hud-data {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px dashed rgba(0, 255, 255, 0.3);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #e0faff;
+}
+
+.weather-item,
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.weather-item:last-child,
+.status-item:last-child {
+  margin-bottom: 0;
+}
+
+.weather-label,
+.status-label {
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.weather-value,
+.status-value {
+  font-weight: 600;
+  color: #0ff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.weather-loading,
+.weather-error {
+  text-align: center;
+  padding: 10px;
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.hud-toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1999;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid #0ff;
+  color: #0ff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-shadow: 0 0 5px #0ff;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.hud-toggle-btn:hover {
+  background: rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Dynamic Content Styles */
+.hud-loading,
+.hud-error,
+.hud-empty {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.hud-error {
+  color: #ff4444;
+}
+
+.error-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.error-text {
+  margin-bottom: 10px;
+}
+
+/* Text Content */
+.hud-text-content {
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+/* Key-Value Content */
+.hud-keyvalue-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hud-keyvalue-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-keyvalue-label {
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+
+.hud-keyvalue-value {
+  font-weight: 600;
+  color: #0ff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* Image Content */
+.hud-section-featured .hud-section-title {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.hud-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.hud-image {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  filter: 
+    /* Top-left blur */
+    drop-shadow(1px 1px 3px rgba(0, 255, 255, 0.2)) 
+    /* Top-right blur */
+    drop-shadow(-1px 1px 3px rgba(0, 255, 255, 0.2)) 
+    /* Bottom-left blur */
+    drop-shadow(1px -1px 3px rgba(0, 255, 255, 0.2)) 
+    /* Bottom-right blur */
+    drop-shadow(-1px -1px 3px rgba(0, 255, 255, 0.2))
+    /* Main shadow */
+    drop-shadow(4px 4px 6px rgba(0, 255, 255, 0.2));
+}
+
+.hud-image-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  font-style: italic;
+  color: #0ff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  text-transform: capitalize;
+}
+
+/* Video Content */
+.hud-video {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+/* YouTube Content */
+.hud-youtube {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+/* Chart Content */
+.hud-chart {
+  width: 100% !important;
+  height: 200px !important;
+}
+
+/* List Content */
+.hud-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hud-list-item {
+  padding: 6px 0;
+  border-bottom: 1px dashed rgba(0, 255, 255, 0.2);
+  font-size: 0.85rem;
+}
+
+.hud-list-item:last-child {
+  border-bottom: none;
+}
+
+.hud-list-item strong {
+  color: #0ff;
+}
+
+.hud-list-link {
+  margin-top: 4px;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.hud-list-link a {
+  color: #5ff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  word-break: break-all;
+}
+
+.hud-list-link a:hover {
+  color: #0ff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+  text-decoration: underline;
+}
+
+/* Table Content */
+.hud-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75rem;
+}
+
+.hud-table-header {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  padding: 8px 6px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #0ff;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.hud-table-row {
+  border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+}
+
+.hud-table-row:last-child {
+  border-bottom: none;
+}
+
+.hud-table-row:hover {
+  background: rgba(0, 255, 255, 0.05);
+}
+
+.hud-table-row-highlight {
+  background: rgba(0, 255, 255, 0.15) !important;
+  border: 2px solid rgba(0, 255, 255, 0.5) !important;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.hud-table-row-highlight:hover {
+  background: rgba(0, 255, 255, 0.2) !important;
+}
+
+.hud-table-row-highlight .hud-table-cell {
+  border-color: rgba(0, 255, 255, 0.3);
+  font-weight: 600;
+}
+
+.hud-table-cell {
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  padding: 8px 6px;
+  color: #e0faff;
+  vertical-align: top;
+}
+
+.hud-table-cell:first-child {
+  font-weight: 600;
+  color: #0ff;
+}
+
+/* Refresh Button */
+.hud-refresh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}

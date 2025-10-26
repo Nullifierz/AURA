@@ -1,0 +1,136 @@
+2025-10-26 19:39:14 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-26 19:39:14 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-26 19:39:15 - core.brain - [32mINFO[0m - Loaded 5 tool declarations
+2025-10-26 19:39:15 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-26 19:39:15 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-26 19:39:22 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 19:39:22 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 19:40:09 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 19:40:09 - core.brain - [32mINFO[0m - Executing function: search_web({'query': 'latest AI news', 'max_results': 5})
+2025-10-26 19:40:09 - core.tools.search_tool - [32mINFO[0m - Searching web for: latest AI news
+2025-10-26 19:40:09 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-10-26 19:40:09 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: latest AI news
+2025-10-26 19:40:10 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 19:40:10 - core.mouth - [32mINFO[0m - Generating speech for text (length: 112)
+2025-10-26 20:06:37 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-26 20:06:37 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-26 20:06:37 - core.brain - [32mINFO[0m - Loaded 5 tool declarations
+2025-10-26 20:06:37 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-26 20:06:37 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-26 20:06:48 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:06:48 - core.brain - [32mINFO[0m - Executing function: search_web({'query': 'AI latest news', 'max_results': 5})
+2025-10-26 20:06:48 - core.tools.search_tool - [32mINFO[0m - Searching web for: AI latest news
+2025-10-26 20:06:50 - core.tools.search_tool - [32mINFO[0m - Found 5 search results
+2025-10-26 20:06:50 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-10-26 20:06:50 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: AI latest news
+2025-10-26 20:06:52 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:06:52 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 20:16:12 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-26 20:16:12 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-26 20:16:12 - core.brain - [32mINFO[0m - Loaded 5 tool declarations
+2025-10-26 20:16:12 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-26 20:16:12 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-26 20:16:19 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:16:19 - core.brain - [32mINFO[0m - Executing function: search_web({'query': 'latest AI news', 'max_results': 3, 'fetch_content': True})
+2025-10-26 20:16:19 - core.tools.search_tool - [32mINFO[0m - Searching web for: latest AI news (fetch_content=True)
+2025-10-26 20:16:22 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://techcrunch.com/category/artificial-intelligence/
+2025-10-26 20:16:23 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://www.artificialintelligence-news.com/
+2025-10-26 20:16:24 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://www.aboutamazon.com/news/operations/new-robots-amazon-fulfillment-agentic-ai
+2025-10-26 20:16:24 - core.tools.search_tool - [32mINFO[0m - Found 3 search results (fetch_content=True)
+2025-10-26 20:16:24 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-10-26 20:16:24 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: latest AI news
+2025-10-26 20:16:28 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:16:28 - core.mouth - [32mINFO[0m - Generating speech for text (length: 874)
+2025-10-26 20:21:16 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:21:16 - core.brain - [32mINFO[0m - Executing function: search_web({'fetch_content': True, 'max_results': 3, 'query': "What's new about Gemini"})
+2025-10-26 20:21:16 - core.tools.search_tool - [32mINFO[0m - Searching web for: What's new about Gemini (fetch_content=True)
+2025-10-26 20:21:19 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://blog.google/products/gemini/
+2025-10-26 20:21:20 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://gemini.google/release-notes/
+2025-10-26 20:21:21 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://gemini.google/latest-news/
+2025-10-26 20:21:22 - core.tools.search_tool - [32mINFO[0m - Found 3 search results (fetch_content=True)
+2025-10-26 20:21:22 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-10-26 20:21:22 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: What's new about Gemini
+2025-10-26 20:21:27 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:21:27 - core.mouth - [32mINFO[0m - Generating speech for text (length: 826)
+2025-10-26 20:26:12 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:26:12 - core.brain - [32mINFO[0m - Executing function: search_web({'query': 'Python tutorial', 'max_results': 3, 'fetch_content': True})
+2025-10-26 20:26:12 - core.tools.search_tool - [32mINFO[0m - Searching web for: Python tutorial (fetch_content=True)
+2025-10-26 20:26:15 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://docs.python.org/3/tutorial/index.html
+2025-10-26 20:26:16 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://www.w3schools.com/python/
+2025-10-26 20:26:17 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://www.tutorialspoint.com/python/index.htm
+2025-10-26 20:26:17 - core.tools.search_tool - [32mINFO[0m - Found 3 search results (fetch_content=True)
+2025-10-26 20:26:17 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-10-26 20:26:17 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: Python tutorial
+2025-10-26 20:26:22 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:26:22 - core.mouth - [32mINFO[0m - Generating speech for text (length: 1303)
+2025-10-26 20:30:46 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-26 20:30:46 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-26 20:30:46 - core.brain - [32mINFO[0m - Loaded 5 tool declarations
+2025-10-26 20:30:46 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-26 20:30:46 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-26 20:30:54 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:30:54 - core.brain - [32mINFO[0m - Executing function: search_web({'query': 'Official Python Tutorial', 'max_results': 1, 'fetch_content': True})
+2025-10-26 20:30:54 - core.tools.search_tool - [32mINFO[0m - Searching web for: Official Python Tutorial (fetch_content=True)
+2025-10-26 20:30:56 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://docs.python.org/3/tutorial/index.html
+2025-10-26 20:30:57 - core.tools.search_tool - [32mINFO[0m - Found 1 search results (fetch_content=True)
+2025-10-26 20:30:57 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-10-26 20:30:57 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: Official Python Tutorial
+2025-10-26 20:30:59 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:30:59 - core.mouth - [32mINFO[0m - Generating speech for text (length: 208)
+2025-10-26 20:31:25 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 20:31:25 - core.mouth - [32mINFO[0m - Generating speech for text (length: 143)
+2025-10-26 20:31:49 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:31:49 - core.brain - [32mINFO[0m - Executing function: search_web({'max_results': 1, 'query': 'golang tutorial', 'fetch_content': True})
+2025-10-26 20:31:49 - core.tools.search_tool - [32mINFO[0m - Searching web for: golang tutorial (fetch_content=True)
+2025-10-26 20:31:50 - core.tools.search_tool - [32mINFO[0m - Fetching content from: https://go.dev/doc/tutorial/
+2025-10-26 20:31:50 - core.tools.search_tool - [32mINFO[0m - Found 1 search results (fetch_content=True)
+2025-10-26 20:31:50 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-10-26 20:31:50 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: golang tutorial
+2025-10-26 20:31:53 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:31:53 - core.mouth - [32mINFO[0m - Generating speech for text (length: 211)
+2025-10-26 20:33:08 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:33:08 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Bandung'})
+2025-10-26 20:33:09 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-26 20:33:13 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:33:13 - core.mouth - [32mINFO[0m - Generating speech for text (length: 151)
+2025-10-26 20:37:34 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 20:37:34 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 20:37:46 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 20:37:46 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 20:38:01 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 20:38:01 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 20:38:13 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 20:38:13 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 20:38:24 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 20:38:24 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 20:38:47 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 20:38:47 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 20:39:05 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 20:39:05 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 20:39:13 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-26 20:39:13 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-26 20:39:32 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:39:32 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Bandung'})
+2025-10-26 20:39:32 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-26 20:39:33 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:39:33 - core.mouth - [32mINFO[0m - Generating speech for text (length: 95)
+2025-10-26 20:39:56 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:39:56 - core.brain - [32mINFO[0m - Executing function: get_weather({'temperature': 'C', 'location': 'New York'})
+2025-10-26 20:39:56 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-26 20:39:57 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:39:57 - core.mouth - [32mINFO[0m - Generating speech for text (length: 148)
+2025-10-26 20:40:39 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:40:39 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Tokyo'})
+2025-10-26 20:40:39 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-26 20:40:41 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:40:41 - core.mouth - [32mINFO[0m - Generating speech for text (length: 73)
+2025-10-26 20:44:05 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-26 20:44:05 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-26 20:44:05 - core.brain - [32mINFO[0m - Loaded 5 tool declarations
+2025-10-26 20:44:05 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-26 20:44:05 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-26 20:44:14 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-26 20:44:14 - core.brain - [32mINFO[0m - Executing function: get_weather({'temperature': 'C', 'location': 'Jakarta'})
+2025-10-26 20:44:14 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-26 20:44:15 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-26 20:44:15 - core.mouth - [32mINFO[0m - Generating speech for text (length: 107)

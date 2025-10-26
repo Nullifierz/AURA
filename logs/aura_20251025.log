@@ -1,0 +1,663 @@
+2025-10-25 00:03:19 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 00:03:19 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-25 00:03:20 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 00:03:20 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 00:03:36 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-25 00:03:36 - core.mouth - [32mINFO[0m - Generating speech for text (length: 584)
+2025-10-25 00:05:01 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 00:05:01 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-25 00:05:01 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 00:05:01 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 00:05:21 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 00:05:21 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-25 00:05:21 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 00:05:21 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 00:05:32 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-25 00:05:32 - core.mouth - [32mINFO[0m - Generating speech for text (length: 423)
+2025-10-25 00:10:25 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 00:10:25 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-25 00:10:25 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 00:10:25 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 00:10:35 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-25 00:10:35 - core.mouth - [32mINFO[0m - Generating speech for text (length: 308)
+2025-10-25 00:11:51 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 00:11:51 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-25 00:11:51 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 00:11:51 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 00:12:04 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-25 00:12:04 - core.mouth - [32mINFO[0m - Generating speech for text (length: 71)
+2025-10-25 09:17:30 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 09:17:30 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-25 09:17:30 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 09:17:30 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 10:10:30 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 10:10:30 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 10:11:46 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 10:11:46 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 10:11:46 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 10:11:46 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 10:11:46 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 10:11:56 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 10:11:56 - core.mouth - [32mINFO[0m - Generating speech for text (length: 55)
+2025-10-25 10:12:21 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 10:12:21 - core.mouth - [32mINFO[0m - Generating speech for text (length: 138)
+2025-10-25 10:13:21 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 10:13:21 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 10:13:21 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 10:13:21 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 10:13:21 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 10:14:41 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:14:41 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Bandung'})
+2025-10-25 10:14:43 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:14:43 - core.mouth - [32mINFO[0m - Generating speech for text (length: 181)
+2025-10-25 10:20:33 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 10:20:33 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 10:20:33 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 10:20:33 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 10:20:33 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 10:20:44 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:20:44 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'bandung'})
+2025-10-25 10:20:44 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:20:45 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:20:45 - core.mouth - [32mINFO[0m - Generating speech for text (length: 181)
+2025-10-25 10:22:01 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:22:01 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Jakarta'})
+2025-10-25 10:22:01 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:22:03 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:22:03 - core.mouth - [32mINFO[0m - Generating speech for text (length: 192)
+2025-10-25 10:25:21 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:25:21 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'bandung'})
+2025-10-25 10:25:21 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:25:22 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:25:22 - core.mouth - [32mINFO[0m - Generating speech for text (length: 181)
+2025-10-25 10:37:50 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 10:37:50 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 10:37:51 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 10:37:51 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 10:37:51 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 10:37:57 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:37:57 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Bandung'})
+2025-10-25 10:37:57 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:37:58 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:37:58 - core.mouth - [32mINFO[0m - Generating speech for text (length: 184)
+2025-10-25 10:39:10 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:39:10 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'New York'})
+2025-10-25 10:39:11 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:39:12 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:39:12 - core.mouth - [32mINFO[0m - Generating speech for text (length: 164)
+2025-10-25 10:40:54 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:40:54 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'alaska'})
+2025-10-25 10:40:54 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:40:56 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:40:56 - core.mouth - [32mINFO[0m - Generating speech for text (length: 190)
+2025-10-25 10:52:23 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 10:52:23 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 10:52:23 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 10:52:23 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 10:52:23 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 10:52:29 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 10:52:29 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-25 10:52:41 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:52:41 - core.brain - [32mINFO[0m - Executing function: get_weather({'temperature': 'C', 'location': 'Bandung'})
+2025-10-25 10:52:41 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:52:42 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:52:42 - core.mouth - [32mINFO[0m - Generating speech for text (length: 176)
+2025-10-25 10:56:18 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 10:56:18 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 10:56:19 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 10:56:19 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 10:56:19 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 10:56:23 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 10:56:23 - core.mouth - [32mINFO[0m - Generating speech for text (length: 49)
+2025-10-25 10:56:32 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:56:32 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'bandung'})
+2025-10-25 10:56:32 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:56:33 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:56:33 - core.mouth - [32mINFO[0m - Generating speech for text (length: 184)
+2025-10-25 10:59:27 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:59:27 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Bandung'})
+2025-10-25 10:59:27 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:59:28 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:59:28 - core.mouth - [32mINFO[0m - Generating speech for text (length: 184)
+2025-10-25 10:59:45 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 10:59:45 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 10:59:45 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 10:59:45 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 10:59:45 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 10:59:57 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 10:59:57 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Jakarta'})
+2025-10-25 10:59:57 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 10:59:58 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 10:59:58 - core.mouth - [32mINFO[0m - Generating speech for text (length: 185)
+2025-10-25 11:05:18 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:05:18 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Bandung'})
+2025-10-25 11:05:18 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 11:05:19 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:05:19 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Bandung'})
+2025-10-25 11:05:19 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 11:05:20 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:05:20 - core.mouth - [32mINFO[0m - Generating speech for text (length: 176)
+2025-10-25 11:05:21 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:05:21 - core.mouth - [32mINFO[0m - Generating speech for text (length: 185)
+2025-10-25 11:06:18 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 11:06:18 - core.mouth - [32mINFO[0m - Generating speech for text (length: 49)
+2025-10-25 11:06:30 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:06:30 - core.brain - [32mINFO[0m - Executing function: get_time({})
+2025-10-25 11:06:30 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_time
+2025-10-25 11:06:31 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:06:31 - core.mouth - [32mINFO[0m - Generating speech for text (length: 34)
+2025-10-25 11:06:51 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:06:51 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:06:53 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:06:55 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:06:55 - core.mouth - [32mINFO[0m - Generating speech for text (length: 419)
+2025-10-25 11:06:56 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 188: surrogates not allowed
+
+2025-10-25 11:07:03 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:07:03 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:07:04 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:07:06 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:07:06 - core.mouth - [32mINFO[0m - Generating speech for text (length: 357)
+2025-10-25 11:07:07 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 177: surrogates not allowed
+
+2025-10-25 11:10:31 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 11:10:31 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-25 11:12:49 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 11:12:49 - core.mouth - [32mINFO[0m - Generating speech for text (length: 49)
+2025-10-25 11:13:07 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:13:07 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:13:08 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:13:10 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:13:10 - core.mouth - [32mINFO[0m - Generating speech for text (length: 353)
+2025-10-25 11:13:11 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 177: surrogates not allowed
+
+2025-10-25 11:17:12 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:17:12 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:17:13 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:17:15 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:17:15 - core.mouth - [32mINFO[0m - Generating speech for text (length: 357)
+2025-10-25 11:17:16 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 177: surrogates not allowed
+
+2025-10-25 11:17:20 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 11:17:20 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 11:17:21 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 11:17:21 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 11:17:21 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 11:17:32 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:17:32 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:17:32 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:17:35 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:17:35 - core.mouth - [32mINFO[0m - Generating speech for text (length: 369)
+2025-10-25 11:17:36 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 207: surrogates not allowed
+
+2025-10-25 11:18:56 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 11:18:56 - core.mouth - [32mINFO[0m - Generating speech for text (length: 138)
+2025-10-25 11:19:12 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:19:12 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'bandung'})
+2025-10-25 11:19:13 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 11:19:14 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:19:14 - core.mouth - [32mINFO[0m - Generating speech for text (length: 181)
+2025-10-25 11:22:57 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:22:57 - core.brain - [32mINFO[0m - Executing function: get_time({})
+2025-10-25 11:22:57 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_time
+2025-10-25 11:22:58 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:22:58 - core.mouth - [32mINFO[0m - Generating speech for text (length: 34)
+2025-10-25 11:23:35 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:23:35 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:23:36 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:23:38 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:23:38 - core.mouth - [32mINFO[0m - Generating speech for text (length: 357)
+2025-10-25 11:23:39 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 177: surrogates not allowed
+
+2025-10-25 11:26:01 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 11:26:01 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 11:26:01 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 11:26:01 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 11:26:01 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 11:26:15 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:26:15 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:26:16 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:26:19 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:26:19 - core.mouth - [32mINFO[0m - Generating speech for text (length: 357)
+2025-10-25 11:26:20 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 177: surrogates not allowed
+
+2025-10-25 11:28:32 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 11:28:32 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 11:28:32 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 11:28:32 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 11:28:32 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 11:28:41 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:28:41 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:28:42 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:28:44 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:28:44 - core.mouth - [32mINFO[0m - Generating speech for text (length: 276)
+2025-10-25 11:28:46 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 127: surrogates not allowed
+
+2025-10-25 11:29:05 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 11:29:05 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 11:29:05 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 11:29:05 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 11:29:05 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 11:29:24 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:29:24 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:29:25 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:29:27 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:29:27 - core.mouth - [32mINFO[0m - Generating speech for text (length: 357)
+2025-10-25 11:29:28 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 177: surrogates not allowed
+
+2025-10-25 11:29:38 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 11:29:38 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-25 11:31:14 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 11:31:14 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 11:31:15 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 11:31:15 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 11:31:15 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 11:31:22 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:31:22 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:31:23 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:31:25 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:31:25 - core.mouth - [32mINFO[0m - Generating speech for text (length: 354)
+2025-10-25 11:32:07 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:32:07 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({'max_results': 5})
+2025-10-25 11:32:08 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:32:10 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:32:10 - core.mouth - [32mINFO[0m - Generating speech for text (length: 354)
+2025-10-25 11:35:14 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 11:35:14 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 11:35:15 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 11:35:15 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 11:35:15 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 11:35:28 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:35:28 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:35:29 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:35:31 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:35:31 - core.mouth - [32mINFO[0m - Generating speech for text (length: 181)
+2025-10-25 11:59:43 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 11:59:43 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 11:59:43 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 11:59:43 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 11:59:43 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 11:59:54 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 11:59:54 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({})
+2025-10-25 11:59:55 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 11:59:57 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 11:59:57 - core.mouth - [32mINFO[0m - Generating speech for text (length: 193)
+2025-10-25 12:05:23 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 12:05:23 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 12:05:23 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 12:05:23 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 12:05:23 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 12:05:32 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 12:05:32 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({'max_results': 1})
+2025-10-25 12:05:34 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 12:05:36 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 12:05:36 - core.mouth - [32mINFO[0m - Generating speech for text (length: 61)
+2025-10-25 12:05:44 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 12:05:44 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 12:05:44 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 12:05:44 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 12:05:44 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 12:05:57 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 12:05:57 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({'max_results': 1})
+2025-10-25 12:05:58 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 12:06:00 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 12:06:00 - core.mouth - [32mINFO[0m - Generating speech for text (length: 61)
+2025-10-25 12:08:55 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 12:08:55 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({'max_results': 1})
+2025-10-25 12:08:55 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 12:08:57 - core.brain - [31mERROR[0m - Error generating content: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250\nPlease retry in 2.445572332s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 325, in generate
+    )
+      
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\errors.py", line 108, in raise_for_response
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250\nPlease retry in 2.445572332s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}
+2025-10-25 12:08:57 - __main__ - [31mERROR[0m - Error in /generate: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250\nPlease retry in 2.445572332s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.5-flash', 'location': 'global'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '2s'}]}}
+2025-10-25 12:09:03 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 12:09:03 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 12:09:03 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 12:09:03 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 12:09:03 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 12:09:09 - core.brain - [31mERROR[0m - Error generating content: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250\nPlease retry in 50.469303893s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 265, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\errors.py", line 108, in raise_for_response
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250\nPlease retry in 50.469303893s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}
+2025-10-25 12:09:09 - __main__ - [31mERROR[0m - Error in /generate: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit.\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 250\nPlease retry in 50.469303893s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.5-flash'}, 'quotaValue': '250'}]}, {'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '50s'}]}}
+2025-10-25 12:09:50 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 12:09:50 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 12:09:50 - core.brain - [32mINFO[0m - Loaded 4 tool declarations
+2025-10-25 12:09:50 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 12:09:50 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 12:09:55 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 12:09:55 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-25 12:10:05 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 12:10:05 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({'max_results': 1})
+2025-10-25 12:10:06 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-25 12:10:08 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 12:10:08 - core.mouth - [32mINFO[0m - Generating speech for text (length: 61)
+2025-10-25 12:10:38 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 12:10:38 - core.brain - [32mINFO[0m - Executing function: get_time({})
+2025-10-25 12:10:38 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_time
+2025-10-25 12:10:39 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 12:10:39 - core.mouth - [32mINFO[0m - Generating speech for text (length: 24)
+2025-10-25 12:10:50 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 12:10:50 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Bandung'})
+2025-10-25 12:10:50 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-10-25 12:10:51 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 12:10:51 - core.mouth - [32mINFO[0m - Generating speech for text (length: 61)
+2025-10-25 12:50:58 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 12:50:58 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 12:50:59 - core.brain - [32mINFO[0m - Loaded 5 tool declarations
+2025-10-25 12:50:59 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 12:50:59 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 12:51:07 - core.brain - [31mERROR[0m - Error generating content: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.tools[0].function_declarations[4].parameters.properties[time_range].enum[3]: cannot be empty\n', 'status': 'INVALID_ARGUMENT'}}
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 300, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\errors.py", line 108, in raise_for_response
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.tools[0].function_declarations[4].parameters.properties[time_range].enum[3]: cannot be empty\n', 'status': 'INVALID_ARGUMENT'}}
+2025-10-25 12:51:07 - __main__ - [31mERROR[0m - Error in /generate: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.tools[0].function_declarations[4].parameters.properties[time_range].enum[3]: cannot be empty\n', 'status': 'INVALID_ARGUMENT'}}
+2025-10-25 12:51:15 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 12:51:15 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 12:51:16 - core.brain - [32mINFO[0m - Loaded 5 tool declarations
+2025-10-25 12:51:16 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 12:51:16 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 12:51:18 - core.brain - [31mERROR[0m - Error generating content: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.tools[0].function_declarations[4].parameters.properties[time_range].enum[3]: cannot be empty\n', 'status': 'INVALID_ARGUMENT'}}
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 300, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\errors.py", line 108, in raise_for_response
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.tools[0].function_declarations[4].parameters.properties[time_range].enum[3]: cannot be empty\n', 'status': 'INVALID_ARGUMENT'}}
+2025-10-25 12:51:18 - __main__ - [31mERROR[0m - Error in /generate: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': '* GenerateContentRequest.tools[0].function_declarations[4].parameters.properties[time_range].enum[3]: cannot be empty\n', 'status': 'INVALID_ARGUMENT'}}
+2025-10-25 12:52:18 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-25 12:52:18 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-25 12:52:18 - core.brain - [32mINFO[0m - Loaded 5 tool declarations
+2025-10-25 12:52:18 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-25 12:52:18 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 12:52:23 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-25 12:52:23 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-10-25 12:52:40 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-25 12:52:40 - core.brain - [32mINFO[0m - Executing function: web_search({'query': 'latest AI news', 'time_range': 'day'})
+2025-10-25 12:52:40 - core.brain - [32mINFO[0m - Processing HUD data for tool: web_search
+2025-10-25 12:52:41 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-25 12:52:41 - core.mouth - [32mINFO[0m - Generating speech for text (length: 177)

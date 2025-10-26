@@ -1,0 +1,1092 @@
+2025-10-24 20:13:49 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:13:49 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:13:50 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:13:50 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:13:50 - __main__ - [32mINFO[0m - Generating response for: 'Hello'
+2025-10-24 20:13:51 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:13:51 - core.mouth - [32mINFO[0m - Speaking text (length: 33, blocking: True)
+2025-10-24 20:13:55 - core.mouth - [32mINFO[0m - Speech completed (blocking)
+2025-10-24 20:13:55 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:17:16 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:17:16 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:17:17 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:17:17 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:17:17 - __main__ - [32mINFO[0m - Generating response for: 'Hello'
+2025-10-24 20:17:19 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:17:19 - core.mouth - [32mINFO[0m - Speaking text (length: 33, blocking: True)
+2025-10-24 20:17:23 - core.mouth - [32mINFO[0m - Speech completed (blocking)
+2025-10-24 20:17:23 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:17:41 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:17:41 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:17:41 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:17:41 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:17:41 - __main__ - [32mINFO[0m - Generating response for: 'Hello'
+2025-10-24 20:17:42 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:17:42 - core.mouth - [32mINFO[0m - Speaking text (length: 33, blocking: True)
+2025-10-24 20:17:46 - core.mouth - [32mINFO[0m - Speech completed (blocking)
+2025-10-24 20:17:46 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:18:18 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:18:18 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:18:18 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:18:18 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:18:19 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:18:19 - core.mouth - [32mINFO[0m - Speaking text (length: 33, blocking: True)
+2025-10-24 20:18:23 - core.mouth - [32mINFO[0m - Speech completed (blocking)
+2025-10-24 20:18:23 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:18:50 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:18:50 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:18:50 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:18:50 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:18:51 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:18:51 - core.mouth - [32mINFO[0m - Speaking text (length: 33, blocking: True)
+2025-10-24 20:18:55 - core.mouth - [32mINFO[0m - Speech completed (blocking)
+2025-10-24 20:18:55 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:20:04 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:20:04 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:20:04 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:20:04 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:20:05 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:20:05 - core.mouth - [32mINFO[0m - Speaking text (length: 33, blocking: True)
+2025-10-24 20:20:09 - core.mouth - [32mINFO[0m - Speech completed (blocking)
+2025-10-24 20:20:09 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:21:58 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:21:58 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:21:58 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:21:58 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:21:59 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:22:01 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:22:01 - core.mouth - [32mINFO[0m - Stopping speech
+2025-10-24 20:23:13 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:23:13 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:23:14 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:23:14 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:23:15 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:23:17 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:23:17 - core.mouth - [32mINFO[0m - Stopping speech
+2025-10-24 20:30:00 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:30:00 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:30:00 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:30:00 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:30:02 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:30:04 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:30:04 - core.mouth - [32mINFO[0m - Stopping speech
+2025-10-24 20:30:19 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:30:19 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:30:19 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:30:19 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:30:20 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:30:20 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:30:31 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:30:31 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:30:31 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:30:31 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:30:32 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:30:32 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:30:59 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:30:59 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:30:59 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:30:59 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:31:01 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:31:02 - __main__ - [32mINFO[0m - AURA application completed
+2025-10-24 20:31:02 - core.mouth - [32mINFO[0m - Stopping speech
+2025-10-24 20:38:15 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:38:15 - core.brain - [32mINFO[0m - Initializing Brain with Google GenAI
+2025-10-24 20:38:15 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:38:15 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:39:09 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:39:09 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 20:39:10 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:39:10 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:40:41 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:40:41 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 20:40:41 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:40:41 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:42:38 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:42:38 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 20:42:38 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:42:38 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:44:13 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:44:13 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 20:44:13 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:44:13 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:48:17 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 20:56:19 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 20:56:19 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 20:56:20 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 20:56:20 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 20:58:37 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:01:55 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:01:55 - core.mouth - [32mINFO[0m - Stopping speech
+2025-10-24 21:02:04 - core.mouth - [32mINFO[0m - Stopping speech
+2025-10-24 21:02:05 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 21:02:05 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 21:02:05 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 21:02:06 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 21:02:09 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:02:57 - core.mouth - [32mINFO[0m - Stopping speech
+2025-10-24 21:02:58 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 21:02:58 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 21:02:59 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 21:02:59 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 21:03:01 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:05:32 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 21:05:32 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 21:05:32 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 21:05:32 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 21:05:41 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:05:41 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 21:06:15 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 21:06:15 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 21:06:15 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 21:06:15 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 21:06:28 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:06:28 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 21:06:58 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:06:58 - core.mouth - [32mINFO[0m - Generating speech for text (length: 28)
+2025-10-24 21:09:36 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:09:36 - core.mouth - [32mINFO[0m - Generating speech for text (length: 42)
+2025-10-24 21:27:56 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 21:27:56 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 21:27:56 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 21:27:56 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 21:32:40 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 21:32:40 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 21:32:40 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 21:32:40 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 21:33:34 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:33:34 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 21:40:58 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:40:58 - core.mouth - [32mINFO[0m - Generating speech for text (length: 35)
+2025-10-24 21:41:18 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:41:18 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 21:42:07 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:42:07 - core.mouth - [32mINFO[0m - Generating speech for text (length: 28)
+2025-10-24 21:43:11 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 21:43:11 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 21:43:12 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 21:43:12 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 21:43:20 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:43:20 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 21:44:57 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:44:57 - core.mouth - [32mINFO[0m - Generating speech for text (length: 20)
+2025-10-24 21:48:10 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 21:48:10 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 21:48:11 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 21:48:11 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 21:48:17 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:48:17 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 21:48:27 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:48:27 - core.mouth - [32mINFO[0m - Generating speech for text (length: 26)
+2025-10-24 21:48:39 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:48:39 - core.mouth - [32mINFO[0m - Generating speech for text (length: 26)
+2025-10-24 21:49:27 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 21:49:27 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 21:49:27 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 21:49:27 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 21:49:34 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:49:34 - core.mouth - [32mINFO[0m - Generating speech for text (length: 34)
+2025-10-24 21:49:47 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:49:47 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 21:49:48 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:49:48 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 21:50:02 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 21:50:02 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:09:29 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:09:29 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:11:47 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:11:47 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:11:57 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:11:57 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:12:52 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:12:52 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:16:02 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:16:02 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:16:19 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:16:19 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:18:11 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:18:11 - core.mouth - [32mINFO[0m - Generating speech for text (length: 32)
+2025-10-24 22:18:26 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:18:26 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:18:54 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:18:54 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:20:02 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:20:02 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:20:34 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:20:34 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:25:52 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:25:52 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:25:56 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:25:56 - core.mouth - [32mINFO[0m - Generating speech for text (length: 35)
+2025-10-24 22:26:03 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:26:03 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:26:24 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:26:24 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:27:16 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:27:16 - core.mouth - [32mINFO[0m - Generating speech for text (length: 29)
+2025-10-24 22:27:16 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:27:16 - core.mouth - [32mINFO[0m - Generating speech for text (length: 21)
+2025-10-24 22:27:51 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:27:51 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:28:28 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:28:28 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:30:19 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:30:19 - core.mouth - [32mINFO[0m - Generating speech for text (length: 33)
+2025-10-24 22:33:35 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 22:33:35 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 22:33:35 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 22:33:35 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 22:33:50 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:33:50 - core.mouth - [32mINFO[0m - Generating speech for text (length: 42)
+2025-10-24 22:38:22 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:38:22 - core.mouth - [32mINFO[0m - Generating speech for text (length: 55)
+2025-10-24 22:46:13 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:46:13 - core.mouth - [32mINFO[0m - Generating speech for text (length: 49)
+2025-10-24 22:47:03 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:47:03 - core.mouth - [32mINFO[0m - Generating speech for text (length: 84)
+2025-10-24 22:47:39 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:47:39 - core.mouth - [32mINFO[0m - Generating speech for text (length: 49)
+2025-10-24 22:49:47 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:49:47 - core.mouth - [32mINFO[0m - Generating speech for text (length: 42)
+2025-10-24 22:50:19 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:50:19 - core.mouth - [32mINFO[0m - Generating speech for text (length: 94)
+2025-10-24 22:52:16 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:52:16 - core.mouth - [32mINFO[0m - Generating speech for text (length: 42)
+2025-10-24 22:52:28 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:52:28 - core.mouth - [32mINFO[0m - Generating speech for text (length: 85)
+2025-10-24 22:54:27 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:54:27 - core.mouth - [32mINFO[0m - Generating speech for text (length: 42)
+2025-10-24 22:54:52 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:54:52 - core.mouth - [32mINFO[0m - Generating speech for text (length: 94)
+2025-10-24 22:55:44 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:55:44 - core.mouth - [32mINFO[0m - Generating speech for text (length: 159)
+2025-10-24 22:56:17 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:56:17 - core.mouth - [32mINFO[0m - Generating speech for text (length: 118)
+2025-10-24 22:56:34 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:56:34 - core.mouth - [32mINFO[0m - Generating speech for text (length: 49)
+2025-10-24 22:56:34 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:56:34 - core.mouth - [32mINFO[0m - Generating speech for text (length: 64)
+2025-10-24 22:58:26 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 22:58:26 - core.mouth - [32mINFO[0m - Generating speech for text (length: 120)
+2025-10-24 23:09:45 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:09:45 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:09:45 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:09:45 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:09:50 - core.brain - [31mERROR[0m - Error generating content: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+ValueError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2475, in from_callable_with_api_option
+    _automatic_function_calling_util._parse_schema_from_parameter(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 315, in _parse_schema_from_parameter
+    _raise_for_unsupported_param(param, func_name, ValueError)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2496, in from_callable_with_api_option
+    json_schema_dict = param_schema_adapter.json_schema()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\type_adapter.py", line 727, in json_schema
+    return schema_generator_instance.generate(self.core_schema, mode=mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 415, in generate
+    json_schema: JsonSchemaValue = self.generate_inner(schema)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 578, in generate_inner
+    json_schema = current_handler(schema)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 37, in __call__
+    return self.handler(core_schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 511, in handler_func
+    json_schema = generate_for_schema_type(schema_or_field)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 921, in is_instance_schema
+    return self.handle_invalid_for_json_schema(schema, f'core_schema.IsInstanceSchema ({schema["cls"]})')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 2436, in handle_invalid_for_json_schema
+    raise PydanticInvalidForJsonSchema(f'Cannot generate a JsonSchema for {error_info}')
+pydantic.errors.PydanticInvalidForJsonSchema: Cannot generate a JsonSchema for core_schema.IsInstanceSchema (<class 'inspect._empty'>)
+
+For further information visit https://errors.pydantic.dev/2.12/u/invalid-for-json-schema
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 66, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3794, in _generate_content
+    request_dict = _GenerateContentParameters_to_mldev(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1243, in _GenerateContentParameters_to_mldev
+    _GenerateContentConfig_to_mldev(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1009, in _GenerateContentConfig_to_mldev
+    for item in t.t_tools(api_client, getv(from_object, ['tools']))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 988, in t_tools
+    transformed_tool = t_tool(client, tool)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 967, in t_tool
+    types.FunctionDeclaration.from_callable(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2627, in from_callable
+    return cls.from_callable_with_api_option(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2527, in from_callable_with_api_option
+    _automatic_function_calling_util._raise_for_unsupported_param(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:09:50 - __main__ - [31mERROR[0m - Error in /generate: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:10:49 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:10:49 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:10:49 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:10:49 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:10:55 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:10:55 - core.mouth - [32mINFO[0m - Generating speech for text (length: 231)
+2025-10-24 23:20:18 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:20:18 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:20:19 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:20:19 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:20:31 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:20:31 - core.mouth - [32mINFO[0m - Generating speech for text (length: 522)
+2025-10-24 23:22:39 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:22:39 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:22:39 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:22:39 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:22:54 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:22:54 - core.mouth - [32mINFO[0m - Generating speech for text (length: 639)
+2025-10-24 23:23:52 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:23:52 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:23:53 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:23:53 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:23:58 - core.brain - [31mERROR[0m - Error generating content: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+ValueError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2475, in from_callable_with_api_option
+    _automatic_function_calling_util._parse_schema_from_parameter(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 315, in _parse_schema_from_parameter
+    _raise_for_unsupported_param(param, func_name, ValueError)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2496, in from_callable_with_api_option
+    json_schema_dict = param_schema_adapter.json_schema()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\type_adapter.py", line 727, in json_schema
+    return schema_generator_instance.generate(self.core_schema, mode=mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 415, in generate
+    json_schema: JsonSchemaValue = self.generate_inner(schema)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 578, in generate_inner
+    json_schema = current_handler(schema)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 37, in __call__
+    return self.handler(core_schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 511, in handler_func
+    json_schema = generate_for_schema_type(schema_or_field)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 921, in is_instance_schema
+    return self.handle_invalid_for_json_schema(schema, f'core_schema.IsInstanceSchema ({schema["cls"]})')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 2436, in handle_invalid_for_json_schema
+    raise PydanticInvalidForJsonSchema(f'Cannot generate a JsonSchema for {error_info}')
+pydantic.errors.PydanticInvalidForJsonSchema: Cannot generate a JsonSchema for core_schema.IsInstanceSchema (<class 'inspect._empty'>)
+
+For further information visit https://errors.pydantic.dev/2.12/u/invalid-for-json-schema
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 81, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3794, in _generate_content
+    request_dict = _GenerateContentParameters_to_mldev(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1243, in _GenerateContentParameters_to_mldev
+    _GenerateContentConfig_to_mldev(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1009, in _GenerateContentConfig_to_mldev
+    for item in t.t_tools(api_client, getv(from_object, ['tools']))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 988, in t_tools
+    transformed_tool = t_tool(client, tool)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 967, in t_tool
+    types.FunctionDeclaration.from_callable(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2627, in from_callable
+    return cls.from_callable_with_api_option(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2527, in from_callable_with_api_option
+    _automatic_function_calling_util._raise_for_unsupported_param(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:23:58 - __main__ - [31mERROR[0m - Error in /generate: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:25:36 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:25:36 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:25:36 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:25:36 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:25:40 - core.brain - [31mERROR[0m - Error generating content: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+ValueError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2475, in from_callable_with_api_option
+    _automatic_function_calling_util._parse_schema_from_parameter(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 315, in _parse_schema_from_parameter
+    _raise_for_unsupported_param(param, func_name, ValueError)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2496, in from_callable_with_api_option
+    json_schema_dict = param_schema_adapter.json_schema()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\type_adapter.py", line 727, in json_schema
+    return schema_generator_instance.generate(self.core_schema, mode=mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 415, in generate
+    json_schema: JsonSchemaValue = self.generate_inner(schema)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 578, in generate_inner
+    json_schema = current_handler(schema)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 37, in __call__
+    return self.handler(core_schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 511, in handler_func
+    json_schema = generate_for_schema_type(schema_or_field)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 921, in is_instance_schema
+    return self.handle_invalid_for_json_schema(schema, f'core_schema.IsInstanceSchema ({schema["cls"]})')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 2436, in handle_invalid_for_json_schema
+    raise PydanticInvalidForJsonSchema(f'Cannot generate a JsonSchema for {error_info}')
+pydantic.errors.PydanticInvalidForJsonSchema: Cannot generate a JsonSchema for core_schema.IsInstanceSchema (<class 'inspect._empty'>)
+
+For further information visit https://errors.pydantic.dev/2.12/u/invalid-for-json-schema
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 84, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3794, in _generate_content
+    request_dict = _GenerateContentParameters_to_mldev(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1243, in _GenerateContentParameters_to_mldev
+    _GenerateContentConfig_to_mldev(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1009, in _GenerateContentConfig_to_mldev
+    for item in t.t_tools(api_client, getv(from_object, ['tools']))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 988, in t_tools
+    transformed_tool = t_tool(client, tool)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 967, in t_tool
+    types.FunctionDeclaration.from_callable(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2627, in from_callable
+    return cls.from_callable_with_api_option(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2527, in from_callable_with_api_option
+    _automatic_function_calling_util._raise_for_unsupported_param(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:25:40 - __main__ - [31mERROR[0m - Error in /generate: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:26:04 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:26:04 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:26:05 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:26:05 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:26:09 - core.brain - [31mERROR[0m - Error generating content: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+ValueError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2475, in from_callable_with_api_option
+    _automatic_function_calling_util._parse_schema_from_parameter(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 315, in _parse_schema_from_parameter
+    _raise_for_unsupported_param(param, func_name, ValueError)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2496, in from_callable_with_api_option
+    json_schema_dict = param_schema_adapter.json_schema()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\type_adapter.py", line 727, in json_schema
+    return schema_generator_instance.generate(self.core_schema, mode=mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 415, in generate
+    json_schema: JsonSchemaValue = self.generate_inner(schema)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 578, in generate_inner
+    json_schema = current_handler(schema)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 37, in __call__
+    return self.handler(core_schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 511, in handler_func
+    json_schema = generate_for_schema_type(schema_or_field)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 921, in is_instance_schema
+    return self.handle_invalid_for_json_schema(schema, f'core_schema.IsInstanceSchema ({schema["cls"]})')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 2436, in handle_invalid_for_json_schema
+    raise PydanticInvalidForJsonSchema(f'Cannot generate a JsonSchema for {error_info}')
+pydantic.errors.PydanticInvalidForJsonSchema: Cannot generate a JsonSchema for core_schema.IsInstanceSchema (<class 'inspect._empty'>)
+
+For further information visit https://errors.pydantic.dev/2.12/u/invalid-for-json-schema
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 84, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3794, in _generate_content
+    request_dict = _GenerateContentParameters_to_mldev(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1243, in _GenerateContentParameters_to_mldev
+    _GenerateContentConfig_to_mldev(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1009, in _GenerateContentConfig_to_mldev
+    for item in t.t_tools(api_client, getv(from_object, ['tools']))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 988, in t_tools
+    transformed_tool = t_tool(client, tool)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 967, in t_tool
+    types.FunctionDeclaration.from_callable(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2627, in from_callable
+    return cls.from_callable_with_api_option(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2527, in from_callable_with_api_option
+    _automatic_function_calling_util._raise_for_unsupported_param(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:26:09 - __main__ - [31mERROR[0m - Error in /generate: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:26:24 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:26:24 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:26:25 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:26:25 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:26:28 - core.brain - [31mERROR[0m - Error generating content: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+ValueError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2475, in from_callable_with_api_option
+    _automatic_function_calling_util._parse_schema_from_parameter(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 315, in _parse_schema_from_parameter
+    _raise_for_unsupported_param(param, func_name, ValueError)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2496, in from_callable_with_api_option
+    json_schema_dict = param_schema_adapter.json_schema()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\type_adapter.py", line 727, in json_schema
+    return schema_generator_instance.generate(self.core_schema, mode=mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 415, in generate
+    json_schema: JsonSchemaValue = self.generate_inner(schema)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 578, in generate_inner
+    json_schema = current_handler(schema)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 37, in __call__
+    return self.handler(core_schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 511, in handler_func
+    json_schema = generate_for_schema_type(schema_or_field)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 921, in is_instance_schema
+    return self.handle_invalid_for_json_schema(schema, f'core_schema.IsInstanceSchema ({schema["cls"]})')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 2436, in handle_invalid_for_json_schema
+    raise PydanticInvalidForJsonSchema(f'Cannot generate a JsonSchema for {error_info}')
+pydantic.errors.PydanticInvalidForJsonSchema: Cannot generate a JsonSchema for core_schema.IsInstanceSchema (<class 'inspect._empty'>)
+
+For further information visit https://errors.pydantic.dev/2.12/u/invalid-for-json-schema
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 84, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3794, in _generate_content
+    request_dict = _GenerateContentParameters_to_mldev(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1243, in _GenerateContentParameters_to_mldev
+    _GenerateContentConfig_to_mldev(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1009, in _GenerateContentConfig_to_mldev
+    for item in t.t_tools(api_client, getv(from_object, ['tools']))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 988, in t_tools
+    transformed_tool = t_tool(client, tool)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 967, in t_tool
+    types.FunctionDeclaration.from_callable(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2627, in from_callable
+    return cls.from_callable_with_api_option(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2527, in from_callable_with_api_option
+    _automatic_function_calling_util._raise_for_unsupported_param(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:26:28 - __main__ - [31mERROR[0m - Error in /generate: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:26:42 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:26:42 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:26:42 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:26:42 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:26:44 - core.brain - [31mERROR[0m - Error generating content: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+ValueError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2475, in from_callable_with_api_option
+    _automatic_function_calling_util._parse_schema_from_parameter(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 315, in _parse_schema_from_parameter
+    _raise_for_unsupported_param(param, func_name, ValueError)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2496, in from_callable_with_api_option
+    json_schema_dict = param_schema_adapter.json_schema()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\type_adapter.py", line 727, in json_schema
+    return schema_generator_instance.generate(self.core_schema, mode=mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 415, in generate
+    json_schema: JsonSchemaValue = self.generate_inner(schema)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 578, in generate_inner
+    json_schema = current_handler(schema)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 37, in __call__
+    return self.handler(core_schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 511, in handler_func
+    json_schema = generate_for_schema_type(schema_or_field)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 921, in is_instance_schema
+    return self.handle_invalid_for_json_schema(schema, f'core_schema.IsInstanceSchema ({schema["cls"]})')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 2436, in handle_invalid_for_json_schema
+    raise PydanticInvalidForJsonSchema(f'Cannot generate a JsonSchema for {error_info}')
+pydantic.errors.PydanticInvalidForJsonSchema: Cannot generate a JsonSchema for core_schema.IsInstanceSchema (<class 'inspect._empty'>)
+
+For further information visit https://errors.pydantic.dev/2.12/u/invalid-for-json-schema
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 84, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3794, in _generate_content
+    request_dict = _GenerateContentParameters_to_mldev(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1243, in _GenerateContentParameters_to_mldev
+    _GenerateContentConfig_to_mldev(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1009, in _GenerateContentConfig_to_mldev
+    for item in t.t_tools(api_client, getv(from_object, ['tools']))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 988, in t_tools
+    transformed_tool = t_tool(client, tool)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 967, in t_tool
+    types.FunctionDeclaration.from_callable(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2627, in from_callable
+    return cls.from_callable_with_api_option(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2527, in from_callable_with_api_option
+    _automatic_function_calling_util._raise_for_unsupported_param(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:26:44 - __main__ - [31mERROR[0m - Error in /generate: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:26:48 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:26:48 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:26:49 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:26:49 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:26:52 - core.brain - [31mERROR[0m - Error generating content: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+ValueError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2475, in from_callable_with_api_option
+    _automatic_function_calling_util._parse_schema_from_parameter(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 315, in _parse_schema_from_parameter
+    _raise_for_unsupported_param(param, func_name, ValueError)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2496, in from_callable_with_api_option
+    json_schema_dict = param_schema_adapter.json_schema()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\type_adapter.py", line 727, in json_schema
+    return schema_generator_instance.generate(self.core_schema, mode=mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 415, in generate
+    json_schema: JsonSchemaValue = self.generate_inner(schema)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 578, in generate_inner
+    json_schema = current_handler(schema)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 37, in __call__
+    return self.handler(core_schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 511, in handler_func
+    json_schema = generate_for_schema_type(schema_or_field)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 921, in is_instance_schema
+    return self.handle_invalid_for_json_schema(schema, f'core_schema.IsInstanceSchema ({schema["cls"]})')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 2436, in handle_invalid_for_json_schema
+    raise PydanticInvalidForJsonSchema(f'Cannot generate a JsonSchema for {error_info}')
+pydantic.errors.PydanticInvalidForJsonSchema: Cannot generate a JsonSchema for core_schema.IsInstanceSchema (<class 'inspect._empty'>)
+
+For further information visit https://errors.pydantic.dev/2.12/u/invalid-for-json-schema
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 84, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3794, in _generate_content
+    request_dict = _GenerateContentParameters_to_mldev(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1243, in _GenerateContentParameters_to_mldev
+    _GenerateContentConfig_to_mldev(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1009, in _GenerateContentConfig_to_mldev
+    for item in t.t_tools(api_client, getv(from_object, ['tools']))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 988, in t_tools
+    transformed_tool = t_tool(client, tool)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 967, in t_tool
+    types.FunctionDeclaration.from_callable(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2627, in from_callable
+    return cls.from_callable_with_api_option(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2527, in from_callable_with_api_option
+    _automatic_function_calling_util._raise_for_unsupported_param(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:26:52 - __main__ - [31mERROR[0m - Error in /generate: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:27:15 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:27:15 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:27:15 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:27:15 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:27:21 - core.brain - [31mERROR[0m - Error generating content: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+ValueError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2475, in from_callable_with_api_option
+    _automatic_function_calling_util._parse_schema_from_parameter(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 315, in _parse_schema_from_parameter
+    _raise_for_unsupported_param(param, func_name, ValueError)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2496, in from_callable_with_api_option
+    json_schema_dict = param_schema_adapter.json_schema()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\type_adapter.py", line 727, in json_schema
+    return schema_generator_instance.generate(self.core_schema, mode=mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 415, in generate
+    json_schema: JsonSchemaValue = self.generate_inner(schema)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 578, in generate_inner
+    json_schema = current_handler(schema)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\_internal\_schema_generation_shared.py", line 37, in __call__
+    return self.handler(core_schema)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 511, in handler_func
+    json_schema = generate_for_schema_type(schema_or_field)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 921, in is_instance_schema
+    return self.handle_invalid_for_json_schema(schema, f'core_schema.IsInstanceSchema ({schema["cls"]})')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\pydantic\json_schema.py", line 2436, in handle_invalid_for_json_schema
+    raise PydanticInvalidForJsonSchema(f'Cannot generate a JsonSchema for {error_info}')
+pydantic.errors.PydanticInvalidForJsonSchema: Cannot generate a JsonSchema for core_schema.IsInstanceSchema (<class 'inspect._empty'>)
+
+For further information visit https://errors.pydantic.dev/2.12/u/invalid-for-json-schema
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 81, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3794, in _generate_content
+    request_dict = _GenerateContentParameters_to_mldev(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1243, in _GenerateContentParameters_to_mldev
+    _GenerateContentConfig_to_mldev(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 1009, in _GenerateContentConfig_to_mldev
+    for item in t.t_tools(api_client, getv(from_object, ['tools']))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 988, in t_tools
+    transformed_tool = t_tool(client, tool)
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_transformers.py", line 967, in t_tool
+    types.FunctionDeclaration.from_callable(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2627, in from_callable
+    return cls.from_callable_with_api_option(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\types.py", line 2527, in from_callable_with_api_option
+    _automatic_function_calling_util._raise_for_unsupported_param(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_automatic_function_calling_util.py", line 59, in _raise_for_unsupported_param
+    raise ValueError(
+ValueError: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:27:21 - __main__ - [31mERROR[0m - Error in /generate: Failed to parse the parameter serviceName of function build for automatic function calling.Automatic function calling works best with simpler function signature schema, consider manually parsing your function declaration for function build.
+2025-10-24 23:32:00 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:32:00 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:32:01 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:32:01 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:32:09 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:32:09 - core.mouth - [32mINFO[0m - Generating speech for text (length: 37)
+2025-10-24 23:32:29 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:32:29 - core.mouth - [32mINFO[0m - Generating speech for text (length: 791)
+2025-10-24 23:32:38 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 65: surrogates not allowed
+
+2025-10-24 23:33:19 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:33:19 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:33:19 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:33:19 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:33:33 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:33:33 - core.mouth - [32mINFO[0m - Generating speech for text (length: 774)
+2025-10-24 23:33:42 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 65: surrogates not allowed
+
+2025-10-24 23:35:32 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:35:32 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:35:32 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:35:32 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:35:37 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:35:59 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:36:56 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:36:56 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:36:57 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:36:57 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:37:20 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:37:20 - core.mouth - [32mINFO[0m - Generating speech for text (length: 933)
+2025-10-24 23:37:33 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 41: surrogates not allowed
+
+2025-10-24 23:38:48 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:38:48 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:38:49 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:38:49 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:39:11 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:39:11 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:39:11 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:39:11 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:39:27 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:39:27 - core.mouth - [32mINFO[0m - Generating speech for text (length: 943)
+2025-10-24 23:39:39 - core.mouth - [31mERROR[0m - Piper error: Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\Personal\Hobi\AURA\.venv\Scripts\piper.exe\__main__.py", line 10, in <module>
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\__main__.py", line 178, in main
+    for i, audio_chunk in enumerate(audio_stream):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 215, in synthesize
+    sentence_phonemes = self.phonemize(text)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\voice.py", line 185, in phonemize
+    text_part_phonemes = _ESPEAK_PHONEMIZER.phonemize(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\piper\phonemize_espeak.py", line 30, in phonemize
+    clause_phonemes = espeakbridge.get_phonemes(text)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'utf-8' codec can't encode character '\udc8f' in position 42: surrogates not allowed
+
+2025-10-24 23:39:39 - __main__ - [31mERROR[0m - Error in /generate: 'NoneType' object has no attribute 'encode'
+2025-10-24 23:40:44 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:40:44 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:40:44 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:40:44 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:40:56 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:40:56 - core.mouth - [32mINFO[0m - Generating speech for text (length: 540)
+2025-10-24 23:41:30 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:41:30 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:41:30 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:41:30 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:41:42 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:42:16 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:42:16 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:42:17 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:42:17 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:42:30 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:48:25 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:48:25 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:48:25 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:48:25 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:48:30 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:48:30 - __main__ - [31mERROR[0m - Error in /generate: Mouth.sanitize_text() takes 1 positional argument but 2 were given
+2025-10-24 23:48:57 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:48:57 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:48:57 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:48:57 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:49:04 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:49:04 - __main__ - [31mERROR[0m - Error in /generate: 'Mouth' object has no attribute 'sanitize_text'
+2025-10-24 23:49:18 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:49:18 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:49:18 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:49:18 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:49:22 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:49:22 - core.mouth - [32mINFO[0m - Generating speech for text (length: 55)
+2025-10-24 23:49:55 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:49:55 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:49:56 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:49:56 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:50:09 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:50:09 - core.mouth - [32mINFO[0m - Generating speech for text (length: 697)
+2025-10-24 23:51:10 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:51:10 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:51:11 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:51:11 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:51:31 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:51:31 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:51:32 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:51:32 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:51:47 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:51:47 - core.mouth - [32mINFO[0m - Generating speech for text (length: 771)
+2025-10-24 23:56:15 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:56:15 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:56:15 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:56:15 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-24 23:56:26 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-24 23:56:26 - core.mouth - [32mINFO[0m - Generating speech for text (length: 739)
+2025-10-24 23:59:53 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-24 23:59:53 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash 
+2025-10-24 23:59:54 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-24 23:59:54 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-25 00:00:14 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-25 00:00:14 - core.mouth - [32mINFO[0m - Generating speech for text (length: 709)
+2025-10-25 00:01:29 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-25 00:01:29 - core.mouth - [32mINFO[0m - Generating speech for text (length: 36)
+2025-10-25 00:02:01 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-25 00:02:01 - core.mouth - [32mINFO[0m - Generating speech for text (length: 678)
+2025-10-25 00:03:07 - core.brain - [32mINFO[0m - Content generated successfully
+2025-10-25 00:03:07 - core.mouth - [32mINFO[0m - Generating speech for text (length: 648)
