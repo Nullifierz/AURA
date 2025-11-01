@@ -3,7 +3,7 @@
 
 # API Keys
 api_keys:
-  google_genai: "AIzaSyDQe39s0FZYagBdPQb5aD1GfwZ29a7yAuc"
+  google_genai: "AIzaSyDJeVz4Iq3bJ2-HVExVIaBEd7USHXWFZj4"
   openweather: "b4c8e80d719c9a4e31d3c01d0aca156d"
   # Add other API keys as needed
   # openai: "YOUR_OPENAI_KEY_HERE"

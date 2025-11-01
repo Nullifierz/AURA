@@ -1,0 +1,90 @@
+2025-11-01 11:14:18 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-01 11:14:18 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-01 11:14:18 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-01 11:14:18 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-01 11:14:18 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-01 11:14:33 - core.brain - [31mERROR[0m - Error generating content: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your API key was reported as leaked. Please use another API key.', 'status': 'PERMISSION_DENIED'}}
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 437, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\errors.py", line 108, in raise_for_response
+    raise ClientError(status_code, response_json, response)
+google.genai.errors.ClientError: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your API key was reported as leaked. Please use another API key.', 'status': 'PERMISSION_DENIED'}}
+2025-11-01 11:14:33 - __main__ - [31mERROR[0m - Error in /generate: 403 PERMISSION_DENIED. {'error': {'code': 403, 'message': 'Your API key was reported as leaked. Please use another API key.', 'status': 'PERMISSION_DENIED'}}
+2025-11-01 11:15:43 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-01 11:15:43 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-01 11:15:44 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-01 11:15:44 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-01 11:15:44 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-01 11:15:54 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-11-01 11:15:54 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-11-01 11:16:18 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-01 11:16:18 - core.brain - [32mINFO[0m - Executing function: turn_on_light({})
+2025-11-01 11:16:18 - core.brain - [31mERROR[0m - Error executing turn_on_light: unhashable type: 'slice'
+2025-11-01 11:16:19 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-01 11:16:19 - core.mouth - [32mINFO[0m - Generating speech for text (length: 113)
+2025-11-01 11:23:36 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-01 11:23:36 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-01 11:23:36 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-01 11:23:36 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-01 11:23:36 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-01 11:23:45 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-01 11:23:45 - core.brain - [32mINFO[0m - Executing function: turn_off_light({})
+2025-11-01 11:23:45 - core.brain - [32mINFO[0m - Processing HUD data for tool: turn_off_light
+2025-11-01 11:23:46 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-01 11:23:46 - core.mouth - [32mINFO[0m - Generating speech for text (length: 48)
+2025-11-01 11:24:38 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-01 11:24:38 - core.brain - [32mINFO[0m - Executing function: set_scene({'scene_id': 15})
+2025-11-01 11:24:38 - core.brain - [32mINFO[0m - Processing HUD data for tool: set_scene
+2025-11-01 11:24:42 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-01 11:24:42 - core.mouth - [32mINFO[0m - Generating speech for text (length: 57)
+2025-11-01 11:25:12 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-01 11:25:12 - core.brain - [32mINFO[0m - Executing function: set_color({'b': 0, 'r': 255, 'g': 0})
+2025-11-01 11:25:12 - core.brain - [32mINFO[0m - Processing HUD data for tool: set_color
+2025-11-01 11:25:15 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-01 11:25:15 - core.mouth - [32mINFO[0m - Generating speech for text (length: 46)
+2025-11-01 11:25:58 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-01 11:25:58 - core.brain - [32mINFO[0m - Executing function: turn_on_light({'color_temp': 6500})
+2025-11-01 11:25:58 - core.brain - [32mINFO[0m - Processing HUD data for tool: turn_on_light
+2025-11-01 11:26:00 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-01 11:26:00 - core.mouth - [32mINFO[0m - Generating speech for text (length: 77)
+2025-11-01 11:28:26 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-01 11:28:26 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-01 11:28:27 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-01 11:28:27 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-01 11:28:27 - core.mouth - [32mINFO[0m - Mouth initialized successfully

@@ -352,6 +352,13 @@ Available Tools:
 - get_time: Get current time in Indonesia (WIB)
 - get_date: Get today's date in Indonesia (WIB)
 - search_web: Search the web for information, news, facts, or any topic
+- turn_on_light: Turn on smart lights with brightness, color, scene, or temperature control
+- turn_off_light: Turn off smart lights
+- get_light_state: Check current status of smart lights (on/off, brightness, color)
+- set_brightness: Adjust light brightness (0-255)
+- set_color: Change light color using RGB values
+- set_scene: Activate predefined light scenes (Party, Focus, Relax, Bedtime, etc.)
+- discover_lights: Find all smart lights in the network
 - add_task: Add a new task to the to-do list with optional priority, due date, category
 - get_tasks: Get tasks from to-do list with optional filters (status, priority, category)
 - update_task: Update an existing task's details
@@ -366,6 +373,12 @@ Tool Usage Guidelines:
 - "search for" / "look up" / "find information about" → use search_web(query="...", max_results=3, fetch_content=True)
 - For quick facts: search_web(max_results=3, fetch_content=False)
 - For analysis/summary/conclusion: search_web(max_results=3-5, fetch_content=True)
+- "turn on/off the light(s)" → use turn_on_light() or turn_off_light()
+- "set brightness to 50%" → use set_brightness(128) [0-255 scale]
+- "make it red/blue/green" → use set_color(r, g, b)
+- "party mode" / "focus mode" / "relax" → use set_scene(scene_id) [Party=4, Focus=15, Relax=16, Bedtime=10]
+- "warm white" → use turn_on_light(color_temp=2700)
+- "cool white" / "daylight" → use turn_on_light(color_temp=6500)
 - "add task" / "remember to" / "I need to" → use add_task(title="...", priority="medium", due_date="...")
 - "show my tasks" / "what's on my list" → use get_tasks() or get_tasks(status="pending")
 - "high priority tasks" → use get_tasks(priority="high")
@@ -453,7 +466,9 @@ General:
                     if func_name in TOOL_FUNCTIONS:
                         try:
                             result = TOOL_FUNCTIONS[func_name](**func_args)
-                            logger.debug(f"Function result: {result[:100]}...")
+                            # Convert result to string for logging (handles both dict and str results)
+                            result_str = str(result) if not isinstance(result, str) else result
+                            logger.debug(f"Function result: {result_str[:100]}...")
                             
                             # Process this tool call for HUD data
                             self._process_tool_call_for_hud(func_name, func_args, result)

@@ -1,0 +1,154 @@
+2025-10-27 13:18:56 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-27 13:18:56 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-27 13:18:56 - core.brain - [32mINFO[0m - Loaded 11 tool declarations
+2025-10-27 13:18:56 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-27 13:18:56 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-27 13:19:10 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:19:12 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:19:12 - core.mouth - [32mINFO[0m - Generating speech for text (length: 157)
+2025-10-27 13:20:17 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: curious)
+2025-10-27 13:20:19 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-27 13:20:19 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({'max_results': 5})
+2025-10-27 13:20:23 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-27 13:20:26 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-27 13:20:26 - core.mouth - [32mINFO[0m - Generating speech for text (length: 340)
+2025-10-27 13:20:53 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: curious)
+2025-10-27 13:20:54 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-10-27 13:20:54 - core.brain - [32mINFO[0m - Executing function: get_calendar_events({'max_results': 5})
+2025-10-27 13:20:55 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_calendar_events
+2025-10-27 13:20:57 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-10-27 13:20:57 - core.mouth - [32mINFO[0m - Generating speech for text (length: 356)
+2025-10-27 13:29:21 - core.user_profile - [32mINFO[0m - Conversation memory database initialized
+2025-10-27 13:29:21 - core.user_profile - [32mINFO[0m - User name set to: John
+2025-10-27 13:29:21 - core.user_profile - [32mINFO[0m - User name set to: Sir
+2025-10-27 13:29:21 - core.user_profile - [32mINFO[0m - User name set to: Tony
+2025-10-27 13:29:21 - core.user_profile - [32mINFO[0m - User name set to: Sir
+2025-10-27 13:29:25 - core.user_profile - [32mINFO[0m - Conversation memory database initialized
+2025-10-27 13:29:25 - core.user_profile - [32mINFO[0m - User name set to: John
+2025-10-27 13:29:25 - core.user_profile - [32mINFO[0m - User name set to: Sir
+2025-10-27 13:29:25 - core.user_profile - [32mINFO[0m - User name set to: Tony
+2025-10-27 13:29:25 - core.user_profile - [32mINFO[0m - User name set to: Sir
+2025-10-27 13:34:43 - core.user_profile - [32mINFO[0m - Conversation memory database initialized
+2025-10-27 13:34:45 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-27 13:34:46 - core.brain - [32mINFO[0m - Loaded 13 tool declarations
+2025-10-27 13:34:46 - core.brain - [32mINFO[0m - Session ID: cc0a5cf7-1e99-4c3b-99b1-3a42e73bf140
+2025-10-27 13:34:46 - core.user_profile - [32mINFO[0m - User name set to: TestUser
+2025-10-27 13:34:46 - core.user_profile - [32mINFO[0m - User name set to: Sir
+2025-10-27 13:36:48 - core.user_profile - [32mINFO[0m - Conversation memory database initialized
+2025-10-27 13:36:48 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-27 13:36:48 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-27 13:36:48 - core.brain - [32mINFO[0m - Loaded 13 tool declarations
+2025-10-27 13:36:48 - core.brain - [32mINFO[0m - Session ID: 484a12bd-9e28-4249-8335-15aa0fb9d1f9
+2025-10-27 13:36:48 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-27 13:36:48 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-27 13:36:51 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:36:53 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:36:53 - core.brain - [31mERROR[0m - Error generating content: Object of type PersonalityType is not JSON serializable
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 561, in generate
+    conversation_memory.add_conversation(
+  File "D:\Personal\Hobi\AURA\core\user_profile.py", line 209, in add_conversation
+    json.dumps(context_data) if context_data else None
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PersonalityType is not JSON serializable
+2025-10-27 13:36:53 - __main__ - [31mERROR[0m - Error in /generate: Object of type PersonalityType is not JSON serializable
+2025-10-27 13:38:25 - core.user_profile - [32mINFO[0m - Conversation memory database initialized
+2025-10-27 13:38:25 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-27 13:38:25 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-27 13:38:25 - core.brain - [32mINFO[0m - Loaded 13 tool declarations
+2025-10-27 13:38:25 - core.brain - [32mINFO[0m - Session ID: ef8b0364-4f51-4a96-8ee1-eb0841408a59
+2025-10-27 13:38:25 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-27 13:38:25 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-27 13:38:27 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:38:30 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:38:30 - core.mouth - [32mINFO[0m - Generating speech for text (length: 153)
+2025-10-27 13:38:40 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:38:42 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:38:42 - core.mouth - [32mINFO[0m - Generating speech for text (length: 99)
+2025-10-27 13:38:49 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:38:50 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:38:50 - core.mouth - [32mINFO[0m - Generating speech for text (length: 99)
+2025-10-27 13:39:59 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:40:00 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:40:00 - core.mouth - [32mINFO[0m - Generating speech for text (length: 99)
+2025-10-27 13:40:09 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:40:11 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:40:11 - core.mouth - [32mINFO[0m - Generating speech for text (length: 201)
+2025-10-27 13:42:07 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:42:09 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:42:09 - core.mouth - [32mINFO[0m - Generating speech for text (length: 224)
+2025-10-27 13:46:09 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:46:11 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:46:11 - core.mouth - [32mINFO[0m - Generating speech for text (length: 224)
+2025-10-27 13:46:20 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:46:22 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:46:22 - core.mouth - [32mINFO[0m - Generating speech for text (length: 189)
+2025-10-27 13:46:45 - core.user_profile - [32mINFO[0m - Conversation memory database initialized
+2025-10-27 13:46:45 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-27 13:46:45 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-27 13:46:45 - core.brain - [32mINFO[0m - Loaded 13 tool declarations
+2025-10-27 13:46:45 - core.brain - [32mINFO[0m - Session ID: a5d36373-067e-4653-a013-a78019e5eb60
+2025-10-27 13:46:45 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-27 13:46:45 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-27 13:46:49 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:46:51 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:46:51 - core.mouth - [32mINFO[0m - Generating speech for text (length: 174)
+2025-10-27 13:47:19 - core.user_profile - [32mINFO[0m - Conversation memory database initialized
+2025-10-27 13:47:19 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-27 13:47:19 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-27 13:47:20 - core.brain - [32mINFO[0m - Loaded 13 tool declarations
+2025-10-27 13:47:20 - core.brain - [32mINFO[0m - Session ID: d9135927-6065-433b-adb5-f04b759243e9
+2025-10-27 13:47:20 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-27 13:47:20 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-27 13:47:23 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:47:25 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:47:25 - core.mouth - [32mINFO[0m - Generating speech for text (length: 97)
+2025-10-27 13:47:58 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:47:59 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:47:59 - core.mouth - [32mINFO[0m - Generating speech for text (length: 152)
+2025-10-27 13:50:35 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:50:37 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:50:37 - core.mouth - [32mINFO[0m - Generating speech for text (length: 162)
+2025-10-27 13:51:04 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:51:06 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:51:06 - core.mouth - [32mINFO[0m - Generating speech for text (length: 227)
+2025-10-27 13:51:25 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:51:26 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:51:26 - core.mouth - [32mINFO[0m - Generating speech for text (length: 97)
+2025-10-27 13:52:28 - core.user_profile - [32mINFO[0m - Conversation memory database initialized
+2025-10-27 13:52:28 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-27 13:52:28 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-27 13:52:28 - core.brain - [32mINFO[0m - Loaded 13 tool declarations
+2025-10-27 13:52:28 - core.brain - [32mINFO[0m - Session ID: 6e31b8d1-ca09-4759-8226-6d25593323b1
+2025-10-27 13:52:28 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-27 13:52:28 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-27 13:52:31 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:52:33 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:52:33 - core.mouth - [32mINFO[0m - Generating speech for text (length: 238)
+2025-10-27 13:52:49 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:52:50 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:52:50 - core.mouth - [32mINFO[0m - Generating speech for text (length: 97)
+2025-10-27 13:53:43 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:53:44 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:53:44 - core.mouth - [32mINFO[0m - Generating speech for text (length: 97)
+2025-10-27 13:53:59 - core.brain - [32mINFO[0m - Personality mode: witty (context: afternoon, sentiment: neutral)
+2025-10-27 13:54:01 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:54:01 - core.mouth - [32mINFO[0m - Generating speech for text (length: 201)
+2025-10-27 13:56:22 - __main__ - [32mINFO[0m - Starting AURA application
+2025-10-27 13:56:22 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-10-27 13:56:23 - core.brain - [32mINFO[0m - Loaded 11 tool declarations
+2025-10-27 13:56:23 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-10-27 13:56:23 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-10-27 13:56:30 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-10-27 13:56:30 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
