@@ -44,20 +44,67 @@ class LightController:
     
     def __init__(self):
         self.lights: Dict[str, wizlight] = {}
-        self.default_ip = "192.168.0.107"  # Your light's IP
+        self.default_ip = "192.168.0.100"  # Initial fallback IP
         
     def add_light(self, name: str, ip: str):
         """Add a light to the controller"""
+        print(f"Registering light '{name}' at {ip}")
         self.lights[name] = wizlight(ip)
         
     def get_light(self, name: Optional[str] = None) -> wizlight:
         """Get light by name or default"""
-        if name and name in self.lights:
-            return self.lights[name]
-        # Return default light
+        target_name = name or "default"
+        
+        if target_name in self.lights:
+            return self.lights[target_name]
+            
+        # Return default light if exists
+        if "default" in self.lights:
+            return self.lights["default"]
+            
+        # If no lights at all, add the default one
         if not self.lights:
             self.add_light("default", self.default_ip)
-        return self.lights.get("default") or list(self.lights.values())[0]
+            return self.lights["default"]
+            
+        # If we have lights but not the requested one, return the first one
+        return list(self.lights.values())[0]
+
+    async def ensure_connection(self, name: Optional[str] = None):
+        """
+        Check if light is reachable, if not, run discovery to find new IP.
+        """
+        light = self.get_light(name)
+        try:
+            # Try to get state with a short timeout to check connection
+            await asyncio.wait_for(light.updateState(), timeout=2.0)
+        except (asyncio.TimeoutError, Exception) as e:
+            print(f"Light connection failed ({e}), scanning network for new IP...")
+            await self.scan_and_update()
+
+    async def scan_and_update(self):
+        """Scan network and update light IPs"""
+        try:
+            # Broadcast to find lights
+            bulbs = await discovery.discover_lights(broadcast_space="192.168.0.255")
+            
+            if not bulbs:
+                print("No lights found during scan.")
+                return
+
+            # For now, we'll just update 'default' with the first found bulb
+            # In a multi-bulb setup, we would match by MAC address
+            first_bulb = bulbs[0]
+            print(f"Discovered light at {first_bulb.ip}")
+            
+            # Update the default light
+            self.add_light("default", first_bulb.ip)
+            
+            # If we have other named lights, we might want to update them too
+            # based on MAC if we had that info stored.
+            
+        except Exception as e:
+            print(f"Error during light discovery: {e}")
 
 
 # Global controller instance
@@ -90,43 +137,49 @@ async def turn_on_light_async(
     cold_white: Optional[int] = None
 ) -> Dict[str, Any]:
     """Turn on a light with optional parameters"""
-    try:
-        light = light_controller.get_light(light_name)
-        
-        # Build pilot with parameters
+    
+    # Helper to build the pilot object
+    def build_pilot():
         if scene is not None:
-            # Use scene
-            await light.turn_on(PilotBuilder(scene=scene))
+            return PilotBuilder(scene=scene)
         elif rgb is not None:
-            # RGB color
             pilot = PilotBuilder(rgb=rgb)
             if brightness is not None:
                 pilot.set_brightness(brightness)
-            await light.turn_on(pilot)
+            return pilot
         elif color_temp is not None:
-            # Color temperature
             pilot = PilotBuilder(colortemp=color_temp)
             if brightness is not None:
                 pilot.set_brightness(brightness)
-            await light.turn_on(pilot)
+            return pilot
         elif warm_white is not None:
-            # Warm white
             pilot = PilotBuilder(warm_white=warm_white)
             if brightness is not None:
                 pilot.set_brightness(brightness)
-            await light.turn_on(pilot)
+            return pilot
         elif cold_white is not None:
-            # Cold white
             pilot = PilotBuilder(cold_white=cold_white)
             if brightness is not None:
                 pilot.set_brightness(brightness)
-            await light.turn_on(pilot)
+            return pilot
         elif brightness is not None:
-            # Just brightness
-            await light.turn_on(PilotBuilder(brightness=brightness))
+            return PilotBuilder(brightness=brightness)
         else:
-            # Default - rhythm mode
-            await light.turn_on(PilotBuilder())
+            return PilotBuilder()
+
+    try:
+        light = light_controller.get_light(light_name)
+        pilot = build_pilot()
+        
+        try:
+            # Try first attempt
+            await light.turn_on(pilot)
+        except Exception:
+            # Retry logic
+            print("Light operation failed, scanning for new IP...")
+            await light_controller.scan_and_update()
+            light = light_controller.get_light(light_name)
+            await light.turn_on(pilot)
             
         return {
             "success": True,
@@ -145,7 +198,14 @@ async def turn_off_light_async(light_name: Optional[str] = None) -> Dict[str, An
     """Turn off a light"""
     try:
         light = light_controller.get_light(light_name)
-        await light.turn_off()
+        
+        try:
+            await light.turn_off()
+        except Exception:
+            print("Light operation failed, scanning for new IP...")
+            await light_controller.scan_and_update()
+            light = light_controller.get_light(light_name)
+            await light.turn_off()
         
         return {
             "success": True,
@@ -164,7 +224,14 @@ async def get_light_state_async(light_name: Optional[str] = None) -> Dict[str, A
     """Get current state of a light"""
     try:
         light = light_controller.get_light(light_name)
-        state = await light.updateState()
+        
+        try:
+            state = await light.updateState()
+        except Exception:
+            print("Light operation failed, scanning for new IP...")
+            await light_controller.scan_and_update()
+            light = light_controller.get_light(light_name)
+            state = await light.updateState()
         
         result = {
             "success": True,
@@ -211,7 +278,14 @@ async def set_brightness_async(brightness: int, light_name: Optional[str] = None
         brightness = max(0, min(255, brightness))
         
         light = light_controller.get_light(light_name)
-        await light.turn_on(PilotBuilder(brightness=brightness))
+        
+        try:
+            await light.turn_on(PilotBuilder(brightness=brightness))
+        except Exception:
+            print("Light operation failed, scanning for new IP...")
+            await light_controller.scan_and_update()
+            light = light_controller.get_light(light_name)
+            await light.turn_on(PilotBuilder(brightness=brightness))
         
         return {
             "success": True,
@@ -236,7 +310,14 @@ async def set_color_async(r: int, g: int, b: int, light_name: Optional[str] = No
         b = max(0, min(255, b))
         
         light = light_controller.get_light(light_name)
-        await light.turn_on(PilotBuilder(rgb=(r, g, b)))
+        
+        try:
+            await light.turn_on(PilotBuilder(rgb=(r, g, b)))
+        except Exception:
+            print("Light operation failed, scanning for new IP...")
+            await light_controller.scan_and_update()
+            light = light_controller.get_light(light_name)
+            await light.turn_on(PilotBuilder(rgb=(r, g, b)))
         
         return {
             "success": True,
@@ -264,7 +345,14 @@ async def set_scene_async(scene_id: int, light_name: Optional[str] = None) -> Di
             }
         
         light = light_controller.get_light(light_name)
-        await light.turn_on(PilotBuilder(scene=scene_id))
+        
+        try:
+            await light.turn_on(PilotBuilder(scene=scene_id))
+        except Exception:
+            print("Light operation failed, scanning for new IP...")
+            await light_controller.scan_and_update()
+            light = light_controller.get_light(light_name)
+            await light.turn_on(PilotBuilder(scene=scene_id))
         
         # Get scene name if available
         scene_name = SCENES.get(scene_id, f"Scene {scene_id}")

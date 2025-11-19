@@ -279,3 +279,97 @@ window.auraAPI = {
 
 console.log("ui_main.js loaded. API available at window.auraAPI");
 console.log("Try: window.auraAPI.sendQuery('Hello AURA')");
+
+// --- WebSocket Integration ---
+let socket = null;
+
+function connectWebSocket() {
+    const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+    // Assuming backend is on localhost:8000
+    const wsUrl = `ws://localhost:8000/ws`;
+    
+    console.log(`Connecting to WebSocket: ${wsUrl}`);
+    socket = new WebSocket(wsUrl);
+
+    socket.onopen = function(e) {
+        console.log("[WebSocket] Connection established");
+    };
+
+    socket.onmessage = function(event) {
+        try {
+            const data = JSON.parse(event.data);
+            console.log("[WebSocket] Message received:", data);
+            handleWebSocketMessage(data);
+        } catch (e) {
+            console.error("[WebSocket] Error parsing message:", e);
+        }
+    };
+
+    socket.onclose = function(event) {
+        if (event.wasClean) {
+            console.log(`[WebSocket] Connection closed cleanly, code=${event.code} reason=${event.reason}`);
+        } else {
+            console.log('[WebSocket] Connection died');
+            // Try to reconnect after 5 seconds
+            setTimeout(connectWebSocket, 5000);
+        }
+    };
+
+    socket.onerror = function(error) {
+        console.error(`[WebSocket] Error: ${error.message}`);
+    };
+}
+
+function handleWebSocketMessage(data) {
+    // Handle different message types
+    switch (data.type) {
+        case 'voice_response':
+            // Handle voice response (HUD + Text)
+            if (data.hud_sections && data.hud_sections.length > 0) {
+                if (window.auraHUD) {
+                    console.log("Creating new HUD window from voice command:", data.hud_sections);
+                    window.auraHUD.renderContent({ sections: data.hud_sections });
+                }
+            }
+            
+            // Play audio if available
+            if (data.base64_audio) {
+                console.log("Received audio from voice command, playing...");
+                playBase64Audio(data.base64_audio, data.response);
+            } else {
+                // Fallback if no audio: just show text
+                const responseDiv = document.getElementById('response');
+                if (responseDiv && data.response) {
+                    responseDiv.innerText = data.response;
+                }
+            }
+            break;
+            
+        case 'state_change':
+            // Update visualizer state
+            if (window.auraVisualizer && window.auraVisualizer.setState) {
+                // Map backend states to visualizer states
+                // backend: listening, processing, speaking, idle
+                // visualizer: idle, listening, processing, speaking
+                window.auraVisualizer.setState(data.state);
+            }
+            
+            if (data.state === 'listening' && data.wake_word) {
+                console.log(`Wake word detected: ${data.wake_word}`);
+            }
+            break;
+            
+        case 'error':
+            console.error("Backend error:", data.message);
+            if (window.auraVisualizer && window.auraVisualizer.setState) {
+                window.auraVisualizer.setState('idle');
+            }
+            break;
+            
+        default:
+            console.log("Unknown message type:", data.type);
+    }
+}
+
+// Initialize WebSocket connection
+connectWebSocket();

@@ -102,7 +102,6 @@ def search_web(query: str, max_results: int = 3, fetch_content: bool = True) -> 
             'q': query,
             'format': 'json',
             'language': 'en',
-            'safesearch': 1,  # Moderate safe search
         }
         
         response = requests.get(searxng_url, params=params, timeout=10)

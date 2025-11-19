@@ -1,0 +1,854 @@
+  2025-11-19 13:12:44 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey Jarvis!' (State: standby)
+2025-11-19 13:12:44 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'jarvis'
+2025-11-19 13:12:44 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 13:12:44 - main - [32mINFO[0m - Wake word detected: Hey Jarvis!
+2025-11-19 13:12:48 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hello.' (State: listening)
+2025-11-19 13:12:48 - main - [32mINFO[0m - Processing voice command: Hello.
+2025-11-19 13:12:48 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 13:12:50 - core.brain - [33mWARNING[0m - Model overloaded/busy. Retrying in 2.67s... (Attempt 1/3)
+2025-11-19 13:12:54 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-11-19 13:12:54 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 13:12:54 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-11-19 13:12:56 - core.mouth - [32mINFO[0m - Playing audio...
+2025-11-19 13:12:59 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 13:13:11 - core.ears - [32mINFO[0m - 🎤 Heard: 'Mute.' (State: listening)
+2025-11-19 13:13:11 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-19 13:13:11 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-19 13:13:20 - core.ears - [32mINFO[0m - 🎤 Heard: 'The year of this.' (State: standby)
+2025-11-19 13:13:25 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey Jarvis' (State: standby)
+2025-11-19 13:13:25 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'jarvis'
+2025-11-19 13:13:25 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 13:13:25 - main - [32mINFO[0m - Wake word detected: Hey Jarvis
+2025-11-19 13:13:45 - core.ears - [32mINFO[0m - 🎤 Heard: 'Can you check the weather in Jakarta?' (State: listening)
+2025-11-19 13:13:45 - main - [32mINFO[0m - Processing voice command: Can you check the weather in Jakarta?
+2025-11-19 13:13:45 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 13:13:47 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 13:13:47 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Jakarta'})
+2025-11-19 13:13:47 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-11-19 13:13:48 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 13:13:48 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 13:13:48 - core.mouth - [32mINFO[0m - Generating speech for text (length: 131)
+2025-11-19 13:13:51 - core.mouth - [32mINFO[0m - Playing audio...
+2025-11-19 13:14:02 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 13:26:52 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 13:26:52 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-19 13:26:55 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 13:26:55 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:26:55 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:26:55 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:26:55 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:26:55 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:26:58 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:26:58 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 13:26:58 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:26:59 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:26:59 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:26:59 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:26:59 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:27:02 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:27:02 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 13:27:02 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 13:27:02 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 13:27:02 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 13:27:07 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:27:11 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:27:11 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:27:15 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey Jervis.' (State: standby)
+2025-11-19 13:27:15 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'jervis' matches 'jarvis' (distance=1, max=2)
+2025-11-19 13:27:15 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 13:27:15 - main - [32mINFO[0m - Wake word detected: Hey Jervis.
+2025-11-19 13:27:22 - core.ears - [32mINFO[0m - 🎤 Heard: 'can mute.' (State: listening)
+2025-11-19 13:27:22 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-19 13:27:22 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-19 13:27:35 - core.ears - [32mINFO[0m - 🎤 Heard: 'Okay, you're this.' (State: standby)
+2025-11-19 13:27:36 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey Jarvis' (State: standby)
+2025-11-19 13:27:36 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'jarvis'
+2025-11-19 13:27:36 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 13:27:36 - main - [32mINFO[0m - Wake word detected: Hey Jarvis
+2025-11-19 13:27:45 - core.ears - [32mINFO[0m - 🎤 Heard: 'Tell me a joke.' (State: listening)
+2025-11-19 13:27:45 - main - [32mINFO[0m - Processing voice command: Tell me a joke.
+2025-11-19 13:27:45 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 13:27:47 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-11-19 13:27:47 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 13:27:47 - core.mouth - [32mINFO[0m - Generating speech for text (length: 158)
+2025-11-19 13:27:50 - core.mouth - [32mINFO[0m - Playing audio...
+2025-11-19 13:27:59 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 13:28:06 - core.ears - [32mINFO[0m - 🎤 Heard: 'Okay, then tell me the weather in Jakarta.' (State: listening)
+2025-11-19 13:28:06 - main - [32mINFO[0m - Processing voice command: Okay, then tell me the weather in Jakarta.
+2025-11-19 13:28:06 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 13:28:08 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 13:28:08 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Jakarta'})
+2025-11-19 13:28:08 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-11-19 13:28:10 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 13:28:10 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 13:28:10 - core.mouth - [32mINFO[0m - Generating speech for text (length: 98)
+2025-11-19 13:28:12 - core.mouth - [32mINFO[0m - Playing audio...
+2025-11-19 13:28:20 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 13:28:33 - core.ears - [32mINFO[0m - 🎤 Heard: 'That would be all.' (State: listening)
+2025-11-19 13:28:33 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'that would be all'
+2025-11-19 13:28:33 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-19 13:31:24 - core.ears - [32mINFO[0m - 🎤 Heard: 'What do you mean?' (State: standby)
+2025-11-19 13:31:29 - core.ears - [32mINFO[0m - 🎤 Heard: 'Oh, my God.' (State: standby)
+2025-11-19 13:32:38 - core.ears - [32mINFO[0m - 🎤 Heard: 'Ah, okay.' (State: standby)
+2025-11-19 13:32:44 - core.ears - [32mINFO[0m - 🎤 Heard: 'It works.' (State: standby)
+2025-11-19 13:32:54 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Aura.' (State: standby)
+2025-11-19 13:32:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'aura'
+2025-11-19 13:32:54 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 13:32:54 - main - [32mINFO[0m - Wake word detected: Hey, Aura.
+2025-11-19 13:33:03 - core.ears - [32mINFO[0m - 🎤 Heard: 'That would be all.' (State: listening)
+2025-11-19 13:33:03 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'that would be all'
+2025-11-19 13:33:03 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-19 13:33:22 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Ola.' (State: standby)
+2025-11-19 13:33:26 - core.ears - [32mINFO[0m - 🎤 Heard: 'Yabra.' (State: standby)
+2025-11-19 13:33:30 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Otter.' (State: standby)
+2025-11-19 13:33:34 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, order.' (State: standby)
+2025-11-19 13:33:43 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Aura.' (State: standby)
+2025-11-19 13:33:43 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'aura'
+2025-11-19 13:33:43 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 13:33:43 - main - [32mINFO[0m - Wake word detected: Hey, Aura.
+2025-11-19 13:33:53 - core.ears - [32mINFO[0m - 🎤 Heard: 'Can you give me the latest news about Gemini 3?' (State: listening)
+2025-11-19 13:33:53 - main - [32mINFO[0m - Processing voice command: Can you give me the latest news about Gemini 3?
+2025-11-19 13:33:53 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 13:33:55 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 13:33:55 - core.brain - [32mINFO[0m - Executing function: search_web({'fetch_content': True, 'query': 'Gemini 3 latest news', 'max_results': 3})
+2025-11-19 13:33:55 - core.tools.search_tool - [32mINFO[0m - Searching web for: Gemini 3 latest news (fetch_content=True)
+2025-11-19 13:33:59 - core.tools.search_tool - [31mERROR[0m - Cannot connect to SearXNG service
+2025-11-19 13:33:59 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-11-19 13:33:59 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: Gemini 3 latest news
+2025-11-19 13:34:03 - core.tools.search_tool - [31mERROR[0m - Error getting search data: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /search?q=Gemini+3+latest+news&format=json&language=en&safesearch=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002279E0D4710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\http\client.py", line 1298, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\http\client.py", line 1058, in _send_output
+    self.send(msg)
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\http\client.py", line 996, in send
+    self.connect()
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002279E0D4710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /search?q=Gemini+3+latest+news&format=json&language=en&safesearch=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002279E0D4710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\tools\search_tool.py", line 190, in get_search_results_data
+    response = requests.get(searxng_url, params=params, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /search?q=Gemini+3+latest+news&format=json&language=en&safesearch=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002279E0D4710>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-19 13:34:05 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 13:34:05 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 13:34:05 - core.mouth - [32mINFO[0m - Generating speech for text (length: 163)
+2025-11-19 13:34:08 - core.mouth - [32mINFO[0m - Playing audio...
+2025-11-19 13:34:18 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 13:34:21 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:34:24 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 13:34:24 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:34:25 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:34:25 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:34:25 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:34:25 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:34:28 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:34:28 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 13:34:28 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:34:28 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:34:28 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:34:28 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:34:28 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:34:32 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:34:32 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 13:34:32 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 13:34:32 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 13:34:32 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 13:34:37 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:34:40 - core.ears - [32mINFO[0m - 🎤 Heard: 'Okay, all right.' (State: standby)
+2025-11-19 13:34:44 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Elder.' (State: standby)
+2025-11-19 13:34:48 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Aura.' (State: standby)
+2025-11-19 13:34:48 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'aura'
+2025-11-19 13:34:48 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 13:34:48 - main - [32mINFO[0m - Wake word detected: Hey, Aura.
+2025-11-19 13:34:59 - core.ears - [32mINFO[0m - 🎤 Heard: 'Can you give me the latest news about Gemini 3?' (State: listening)
+2025-11-19 13:34:59 - main - [32mINFO[0m - Processing voice command: Can you give me the latest news about Gemini 3?
+2025-11-19 13:34:59 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 13:35:01 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 13:35:01 - core.brain - [32mINFO[0m - Executing function: search_web({'fetch_content': True, 'max_results': 3, 'query': 'Gemini 3 latest news'})
+2025-11-19 13:35:01 - core.tools.search_tool - [32mINFO[0m - Searching web for: Gemini 3 latest news (fetch_content=True)
+2025-11-19 13:35:05 - core.tools.search_tool - [31mERROR[0m - Cannot connect to SearXNG service
+2025-11-19 13:35:05 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-11-19 13:35:05 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: Gemini 3 latest news
+2025-11-19 13:35:09 - core.tools.search_tool - [31mERROR[0m - Error getting search data: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /search?q=Gemini+3+latest+news&format=json&language=en&safesearch=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C7D857B290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\http\client.py", line 1298, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\http\client.py", line 1058, in _send_output
+    self.send(msg)
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\http\client.py", line 996, in send
+    self.connect()
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001C7D857B290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /search?q=Gemini+3+latest+news&format=json&language=en&safesearch=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C7D857B290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\tools\search_tool.py", line 190, in get_search_results_data
+    response = requests.get(searxng_url, params=params, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /search?q=Gemini+3+latest+news&format=json&language=en&safesearch=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C7D857B290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-19 13:35:11 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 13:35:11 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 13:35:11 - core.mouth - [32mINFO[0m - Generating speech for text (length: 169)
+2025-11-19 13:35:14 - core.mouth - [32mINFO[0m - Playing audio...
+2025-11-19 13:35:24 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 13:35:37 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:35:37 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:36:15 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:43:08 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 13:43:08 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:43:08 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:43:08 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:43:08 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:43:08 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:43:11 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:43:12 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 13:43:12 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:43:12 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:43:12 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:43:12 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:43:12 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:43:15 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:43:15 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 13:43:15 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 13:43:15 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 13:43:15 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 13:43:20 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:43:30 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 13:43:30 - core.brain - [32mINFO[0m - Executing function: search_web({'query': 'latest Gemini 3 news', 'max_results': 3, 'fetch_content': True})
+2025-11-19 13:43:30 - core.tools.search_tool - [32mINFO[0m - Searching web for: latest Gemini 3 news (fetch_content=True)
+2025-11-19 13:43:33 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-11-19 13:43:33 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: latest Gemini 3 news
+2025-11-19 13:43:37 - core.tools.search_tool - [31mERROR[0m - Error getting search data: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /search?q=latest+Gemini+3+news&format=json&language=en&safesearch=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EBB837C910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 494, in request
+    self.endheaders()
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\http\client.py", line 1298, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\http\client.py", line 1058, in _send_output
+    self.send(msg)
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\http\client.py", line 996, in send
+    self.connect()
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 325, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001EBB837C910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /search?q=latest+Gemini+3+news&format=json&language=en&safesearch=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EBB837C910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\tools\search_tool.py", line 190, in get_search_results_data
+    response = requests.get(searxng_url, params=params, timeout=10)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8888): Max retries exceeded with url: /search?q=latest+Gemini+3+news&format=json&language=en&safesearch=1 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001EBB837C910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-11-19 13:43:39 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 13:43:39 - core.mouth - [32mINFO[0m - Generating speech for text (length: 172)
+2025-11-19 13:43:56 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:43:57 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:43:59 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:43:59 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 13:43:59 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-19 13:44:01 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 13:44:01 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:44:01 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:44:01 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:44:01 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:44:01 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:44:04 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:44:04 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 13:44:04 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:44:04 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:44:04 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:44:04 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:44:04 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:44:07 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:44:07 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 13:44:07 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 13:44:07 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 13:44:07 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 13:44:08 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:44:16 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:44:16 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 13:44:17 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-19 13:44:21 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 13:44:21 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:44:21 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:44:21 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:44:21 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:44:21 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:44:25 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:44:25 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 13:44:25 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:44:25 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:44:25 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:44:25 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:44:25 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:44:28 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:44:28 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 13:44:28 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 13:44:28 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 13:44:28 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 13:44:28 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:44:30 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:44:30 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:44:40 - core.brain - [31mERROR[0m - Error generating content: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 437, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\errors.py", line 110, in raise_for_response
+    raise ServerError(status_code, response_json, response)
+google.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}
+2025-11-19 13:44:40 - main - [31mERROR[0m - Error in /generate: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}
+2025-11-19 13:44:48 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:44:48 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 13:44:48 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-19 13:44:50 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 13:44:50 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:44:51 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:44:51 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:44:51 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:44:51 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:44:54 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:44:54 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 13:44:54 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:44:54 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:44:54 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:44:54 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:44:54 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:44:57 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:44:57 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 13:44:57 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 13:44:57 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 13:44:57 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 13:44:57 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:45:03 - core.brain - [31mERROR[0m - Error generating content: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 437, in generate
+    response = self.client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\errors.py", line 110, in raise_for_response
+    raise ServerError(status_code, response_json, response)
+google.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}
+2025-11-19 13:45:03 - main - [31mERROR[0m - Error in /generate: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}
+2025-11-19 13:45:10 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 13:45:10 - core.brain - [32mINFO[0m - Executing function: search_web({'fetch_content': True, 'max_results': 3, 'query': 'Gemini latest news'})
+2025-11-19 13:45:10 - core.tools.search_tool - [32mINFO[0m - Searching web for: Gemini latest news (fetch_content=True)
+2025-11-19 13:45:13 - core.brain - [32mINFO[0m - Processing HUD data for tool: search_web
+2025-11-19 13:45:13 - core.tools.search_tool - [32mINFO[0m - Getting structured search data for: Gemini latest news
+2025-11-19 13:45:18 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 13:45:18 - core.mouth - [32mINFO[0m - Generating speech for text (length: 120)
+2025-11-19 13:47:28 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:47:28 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 13:47:28 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-19 13:50:02 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 13:50:02 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:50:02 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:50:02 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:50:02 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:50:02 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:50:05 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:50:05 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 13:50:05 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:50:06 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:50:06 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:50:06 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:50:06 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:50:09 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:50:09 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 13:50:09 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 13:50:09 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 13:50:09 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 13:50:14 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:50:15 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 13:50:15 - core.brain - [32mINFO[0m - Executing function: turn_off_light({})
+2025-11-19 13:50:28 - core.brain - [32mINFO[0m - Processing HUD data for tool: turn_off_light
+2025-11-19 13:50:29 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 13:50:29 - core.mouth - [32mINFO[0m - Generating speech for text (length: 121)
+2025-11-19 13:50:54 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:50:55 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:50:55 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:50:55 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 13:50:55 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-19 13:50:57 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 13:50:57 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:50:57 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:50:57 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:50:57 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:50:57 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:51:01 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:51:01 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 13:51:01 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:51:01 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:51:01 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:51:01 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:51:01 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:51:04 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:51:04 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 13:51:04 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 13:51:04 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 13:51:04 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 13:51:04 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:51:18 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:51:20 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 13:51:20 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:51:20 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:51:20 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:51:20 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:51:20 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:51:23 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:51:23 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 13:51:23 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 13:51:24 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 13:51:24 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 13:51:24 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 13:51:24 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 13:51:27 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 13:51:27 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 13:51:27 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 13:51:27 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 13:51:27 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 13:51:27 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:51:34 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 13:51:34 - core.brain - [32mINFO[0m - Executing function: turn_off_light({})
+2025-11-19 13:51:35 - core.brain - [32mINFO[0m - Processing HUD data for tool: turn_off_light
+2025-11-19 13:51:37 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 13:51:37 - core.mouth - [32mINFO[0m - Generating speech for text (length: 46)
+2025-11-19 13:53:21 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 13:53:21 - core.brain - [32mINFO[0m - Executing function: turn_on_light({})
+2025-11-19 13:53:21 - core.brain - [32mINFO[0m - Processing HUD data for tool: turn_on_light
+2025-11-19 13:53:22 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 13:53:22 - core.mouth - [32mINFO[0m - Generating speech for text (length: 45)
+2025-11-19 13:55:06 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:55:07 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:55:55 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:55:56 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:56:12 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:56:13 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:56:24 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:56:24 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:56:36 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:56:37 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:56:50 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:56:50 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 13:57:04 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 13:57:04 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 14:10:20 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 14:10:21 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 14:10:37 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 14:10:37 - core.brain - [32mINFO[0m - Executing function: turn_on_light({'color_temp': 6500})
+2025-11-19 14:10:38 - core.brain - [32mINFO[0m - Processing HUD data for tool: turn_on_light
+2025-11-19 14:10:39 - core.brain - [31mERROR[0m - Error generating content: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}
+Traceback (most recent call last):
+  File "D:\Personal\Hobi\AURA\core\brain.py", line 503, in generate
+    final_response = self.client.models.generate_content(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marbo\AppData\Roaming\uv\python\cpython-3.11.13-windows-x86_64-none\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "D:\Personal\Hobi\AURA\.venv\Lib\site-packages\google\genai\errors.py", line 110, in raise_for_response
+    raise ServerError(status_code, response_json, response)
+google.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}
+2025-11-19 14:10:39 - main - [31mERROR[0m - Error in /generate: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'The model is overloaded. Please try again later.', 'status': 'UNAVAILABLE'}}
+2025-11-19 14:12:26 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 14:12:29 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 14:12:29 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-19 21:57:32 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 21:57:32 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 21:57:32 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 21:57:32 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 21:57:32 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 21:57:32 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 21:57:36 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 21:57:36 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 21:57:36 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 21:57:36 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 21:57:36 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 21:57:36 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 21:57:36 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 21:57:39 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 21:57:39 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 21:57:39 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 21:57:39 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 21:57:39 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 21:57:44 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 21:57:46 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-11-19 21:57:46 - core.mouth - [32mINFO[0m - Generating speech for text (length: 39)
+2025-11-19 21:58:01 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Jeffers.' (State: standby)
+2025-11-19 21:58:06 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Oda.' (State: standby)
+2025-11-19 21:58:06 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'oda'
+2025-11-19 21:58:06 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 21:58:06 - main - [32mINFO[0m - Wake word detected: Hey, Oda.
+2025-11-19 21:58:13 - core.ears - [32mINFO[0m - 🎤 Heard: 'paycheck for the weather in Jakarta' (State: listening)
+2025-11-19 21:58:13 - main - [32mINFO[0m - Processing voice command: paycheck for the weather in Jakarta
+2025-11-19 21:58:13 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 21:58:15 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 21:58:15 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Jakarta', 'temperature': 'C'})
+2025-11-19 21:58:15 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-11-19 21:58:19 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 21:58:19 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 21:58:19 - core.mouth - [32mINFO[0m - Generating speech for text (length: 175)
+2025-11-19 21:58:22 - core.mouth - [32mINFO[0m - Playing audio...
+2025-11-19 21:58:36 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 21:58:47 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 21:58:47 - core.brain - [32mINFO[0m - Executing function: get_time({})
+2025-11-19 21:58:47 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_time
+2025-11-19 21:58:49 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 21:58:49 - core.mouth - [32mINFO[0m - Generating speech for text (length: 23)
+2025-11-19 21:59:02 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-11-19 21:59:02 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-11-19 21:59:19 - core.ears - [32mINFO[0m - 🎤 Heard: 'it' (State: listening)
+2025-11-19 21:59:19 - main - [32mINFO[0m - Processing voice command: it
+2025-11-19 21:59:19 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 21:59:20 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-11-19 21:59:20 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 21:59:20 - core.mouth - [32mINFO[0m - Generating speech for text (length: 26)
+2025-11-19 21:59:22 - core.mouth - [32mINFO[0m - Playing audio...
+2025-11-19 21:59:24 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 21:59:28 - core.ears - [32mINFO[0m - 🎤 Heard: 'mute' (State: listening)
+2025-11-19 21:59:28 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-19 21:59:28 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-19 21:59:31 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 21:59:31 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 21:59:31 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-19 21:59:44 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 21:59:44 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 21:59:44 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 21:59:44 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 21:59:44 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 21:59:44 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 21:59:48 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 21:59:48 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 21:59:48 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 21:59:48 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 21:59:48 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 21:59:48 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 21:59:48 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 21:59:51 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 21:59:51 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 21:59:51 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 21:59:51 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 21:59:51 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 21:59:56 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 22:00:01 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, over there.' (State: standby)
+2025-11-19 22:00:06 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Otter.' (State: standby)
+2025-11-19 22:00:10 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Aura.' (State: standby)
+2025-11-19 22:00:10 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'aura'
+2025-11-19 22:00:10 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 22:00:10 - main - [32mINFO[0m - Wake word detected: Hey, Aura.
+2025-11-19 22:00:14 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hello.' (State: listening)
+2025-11-19 22:00:14 - main - [32mINFO[0m - Processing voice command: Hello.
+2025-11-19 22:00:14 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 22:00:16 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-11-19 22:00:16 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 22:00:16 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-11-19 22:00:18 - core.mouth - [32mINFO[0m - Playing audio...
+2025-11-19 22:00:20 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 22:00:26 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 22:00:26 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 22:00:26 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-19 22:10:09 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-19 22:10:09 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 22:10:10 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 22:10:10 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 22:10:10 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 22:10:10 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 22:10:14 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 22:10:14 - main - [32mINFO[0m - Starting AURA application
+2025-11-19 22:10:14 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-19 22:10:14 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-19 22:10:14 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-19 22:10:14 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-19 22:10:14 - core.ears - [32mINFO[0m - Loading faster-whisper model: large-v3 on cuda (compute_type=float16)
+2025-11-19 22:10:17 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-19 22:10:17 - main - [32mINFO[0m - Starting Voice Assistant thread...
+2025-11-19 22:10:17 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-19 22:10:17 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-19 22:10:17 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-19 22:10:17 - main - [32mINFO[0m - WebSocket client connected. Total: 1
+2025-11-19 22:10:37 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hey, Aura.' (State: standby)
+2025-11-19 22:10:37 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'aura'
+2025-11-19 22:10:37 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-19 22:10:37 - main - [32mINFO[0m - Wake word detected: Hey, Aura.
+2025-11-19 22:10:44 - core.ears - [32mINFO[0m - 🎤 Heard: 'Let me check the weather in Chicago.' (State: listening)
+2025-11-19 22:10:44 - main - [32mINFO[0m - Processing voice command: Let me check the weather in Chicago.
+2025-11-19 22:10:44 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 22:10:47 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 22:10:47 - core.brain - [32mINFO[0m - Executing function: get_weather({'location': 'Chicago'})
+2025-11-19 22:10:47 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_weather
+2025-11-19 22:10:51 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 22:10:51 - core.mouth - [32mINFO[0m - Generating speech for text (length: 216)
+2025-11-19 22:10:55 - main - [32mINFO[0m - Frontend connected, sent audio for remote playback.
+2025-11-19 22:10:55 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 22:11:09 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 22:11:20 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-11-19 22:11:20 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-11-19 22:11:52 - core.ears - [32mINFO[0m - 🎤 Heard: 'What time is it?' (State: listening)
+2025-11-19 22:11:52 - main - [32mINFO[0m - Processing voice command: What time is it?
+2025-11-19 22:11:52 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-19 22:11:53 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-19 22:11:53 - core.brain - [32mINFO[0m - Executing function: get_time({})
+2025-11-19 22:11:53 - core.brain - [32mINFO[0m - Processing HUD data for tool: get_time
+2025-11-19 22:11:55 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-19 22:11:55 - core.mouth - [32mINFO[0m - Generating speech for text (length: 24)
+2025-11-19 22:11:57 - main - [32mINFO[0m - Frontend connected, sent audio for remote playback.
+2025-11-19 22:11:57 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-19 22:11:58 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-19 22:12:03 - core.ears - [32mINFO[0m - 🎤 Heard: 'That will be all.' (State: listening)
+2025-11-19 22:12:03 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'that will be all'
+2025-11-19 22:12:03 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-19 22:12:26 - main - [32mINFO[0m - WebSocket client disconnected. Total: 0
+2025-11-19 22:12:26 - main - [32mINFO[0m - Stopping Voice Assistant...
+2025-11-19 22:12:27 - core.ears - [32mINFO[0m - Audio processing loop stopped

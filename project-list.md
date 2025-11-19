@@ -1,7 +1,7 @@
 # AURA AI Assistant - Future Improvements & Roadmap
 
-**Document Version**: 1.0  
-**Date**: October 26, 2025  
+**Document Version**: 1.1  
+**Date**: November 19, 2025  
 **Project**: AURA (AI Voice Assistant)
 
 ---
@@ -21,7 +21,9 @@
 
 ## 🚀 HIGH PRIORITY - Core Experience
 
-### 1. Voice Commands (Wake Word Detection)
+### 1. Voice Commands (Wake Word Detection) ✅
+
+**Status**: Completed (Nov 19, 2025) - Implemented using `faster-whisper` and `webrtcvad`.
 
 **Description**: Add hands-free wake word detection like "Hey AURA" or "Jarvis"
 
@@ -85,7 +87,9 @@ AURA: "You asked me to remind you to buy groceries, which is due today, Sir."
 
 ---
 
-### 3. Real-time Voice Conversation
+### 3. Real-time Voice Conversation 🚧
+
+**Status**: In Progress - WebSocket pipeline established, full streaming TTS pending.
 
 **Description**: Stream audio responses in real-time instead of waiting for full generation
 
@@ -267,7 +271,9 @@ if (taskDueInMinutes <= 15) {
 
 ---
 
-### 9. Smart Home Control
+### 9. Smart Home Control ✅
+
+**Status**: Completed (Nov 19, 2025) - WiZ Light integration with dynamic IP discovery.
 
 **Description**: Control IoT devices and smart home
 

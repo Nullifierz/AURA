@@ -1,0 +1,159 @@
+2025-11-02 00:10:14 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-02 00:10:14 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-02 00:10:14 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-02 00:10:14 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-02 00:10:14 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-02 00:10:14 - core.voice_websocket - [32mINFO[0m - VoiceWebSocketManager initialized
+2025-11-02 00:10:45 - core.voice_websocket - [32mINFO[0m - WebSocket connection established
+2025-11-02 00:10:45 - core.voice_websocket - [32mINFO[0m - Initializing Ears for WebSocket connection
+2025-11-02 00:10:45 - core.ears - [32mINFO[0m - Initializing AURA Ears (Voice Input System)
+2025-11-02 00:10:45 - core.ears - [32mINFO[0m - Loading faster-whisper model: small.en on cuda
+2025-11-02 00:10:46 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-02 00:10:46 - core.ears - [32mINFO[0m - VAD initialized with aggressiveness level 3
+2025-11-02 00:10:46 - core.ears - [32mINFO[0m - AURA Ears initialized successfully
+2025-11-02 00:10:46 - core.voice_websocket - [32mINFO[0m - Ears initialized with WebSocket callbacks
+2025-11-02 00:10:46 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-02 00:10:46 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-02 00:10:46 - core.ears - [32mINFO[0m - ✅ Voice input system started (State: standby)
+2025-11-02 00:10:46 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-02 00:10:54 - core.ears - [32mINFO[0m - 🎤 Heard: 'Turfis' (State: standby)
+2025-11-02 00:11:00 - core.ears - [32mINFO[0m - 🎤 Heard: 'Ciao, Peace!' (State: standby)
+2025-11-02 00:11:05 - core.ears - [32mINFO[0m - 🎤 Heard: 'surface.' (State: standby)
+2025-11-02 00:11:11 - core.ears - [32mINFO[0m - 🎤 Heard: 'power.' (State: standby)
+2025-11-02 00:11:16 - core.ears - [32mINFO[0m - 🎤 Heard: 'Au revoir!' (State: standby)
+2025-11-02 00:11:20 - core.ears - [32mINFO[0m - 🎤 Heard: 'over' (State: standby)
+2025-11-02 00:11:33 - core.ears - [32mINFO[0m - 🎤 Heard: 'Oh, right.' (State: standby)
+2025-11-02 00:11:37 - core.ears - [32mINFO[0m - 🎤 Heard: 'Ora' (State: standby)
+2025-11-02 00:11:37 - core.ears - [32mINFO[0m - ✅ Wake word detected (variation): 'ora' matches 'ora'
+2025-11-02 00:11:37 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-02 00:11:37 - core.voice_websocket - [32mINFO[0m - State changed: standby → listening
+2025-11-02 00:11:37 - core.ears - [31mERROR[0m - Error in state change callback: no running event loop
+2025-11-02 00:11:37 - core.voice_websocket - [32mINFO[0m - Wake word detected: Ora
+2025-11-02 00:11:37 - core.ears - [31mERROR[0m - Error in wake word callback: no running event loop
+2025-11-02 00:12:07 - core.voice_websocket - [32mINFO[0m - WebSocket disconnected
+2025-11-02 00:12:07 - core.ears - [32mINFO[0m - 🛑 Stopping voice input system...
+2025-11-02 00:12:08 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-02 00:12:08 - core.ears - [32mINFO[0m - ✅ Voice input system stopped
+2025-11-02 00:12:08 - core.voice_websocket - [32mINFO[0m - WebSocket connection closed
+2025-11-02 00:14:52 - core.ears - [32mINFO[0m - Initializing AURA Ears (Voice Input System)
+2025-11-02 00:14:52 - core.ears - [32mINFO[0m - Loading faster-whisper model: small.en on cuda
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - VAD initialized with aggressiveness level 3
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - AURA Ears initialized successfully
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact): 'aura' matches 'aura'
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact): 'aurora' matches 'aurora'
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (variation): 'ora' matches 'ora'
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (variation): 'oda' matches 'oda'
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'ura' matches 'aura' (distance: 1)
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'auora' matches 'aura' (distance: 1)
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'arora' matches 'aurora' (distance: 1)
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact): 'jarvis' matches 'jarvis'
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact): 'aura' matches 'aura'
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact): 'aura' matches 'aura'
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - Initializing AURA Ears (Voice Input System)
+2025-11-02 00:14:54 - core.ears - [32mINFO[0m - Loading faster-whisper model: small.en on cuda
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - VAD initialized with aggressiveness level 3
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - AURA Ears initialized successfully
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'that would be all'
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'that will be all'
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'stop listening'
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'goodbye'
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'that would be all'
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - Initializing AURA Ears (Voice Input System)
+2025-11-02 00:14:55 - core.ears - [32mINFO[0m - Loading faster-whisper model: small.en on cuda
+2025-11-02 00:14:56 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-02 00:14:56 - core.ears - [32mINFO[0m - VAD initialized with aggressiveness level 3
+2025-11-02 00:14:56 - core.ears - [32mINFO[0m - AURA Ears initialized successfully
+2025-11-02 00:14:56 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-02 00:14:56 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-02 00:14:56 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-02 00:14:56 - core.ears - [32mINFO[0m - State changed: speaking → standby
+2025-11-02 00:14:56 - core.ears - [32mINFO[0m - Initializing AURA Ears (Voice Input System)
+2025-11-02 00:14:56 - core.ears - [32mINFO[0m - Loading faster-whisper model: small.en on cuda
+2025-11-02 00:14:57 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-02 00:14:57 - core.ears - [32mINFO[0m - VAD initialized with aggressiveness level 3
+2025-11-02 00:14:57 - core.ears - [32mINFO[0m - AURA Ears initialized successfully
+2025-11-02 00:15:25 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-02 00:15:25 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-02 00:15:25 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-02 00:15:25 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-02 00:15:25 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-02 00:15:25 - core.voice_websocket - [32mINFO[0m - VoiceWebSocketManager initialized
+2025-11-02 00:15:31 - core.voice_websocket - [32mINFO[0m - WebSocket connection established
+2025-11-02 00:15:31 - core.voice_websocket - [32mINFO[0m - Initializing Ears for WebSocket connection
+2025-11-02 00:15:31 - core.ears - [32mINFO[0m - Initializing AURA Ears (Voice Input System)
+2025-11-02 00:15:31 - core.ears - [32mINFO[0m - Loading faster-whisper model: small.en on cuda
+2025-11-02 00:15:33 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-02 00:15:33 - core.ears - [32mINFO[0m - VAD initialized with aggressiveness level 3
+2025-11-02 00:15:33 - core.ears - [32mINFO[0m - AURA Ears initialized successfully
+2025-11-02 00:15:33 - core.voice_websocket - [32mINFO[0m - Ears initialized with WebSocket callbacks
+2025-11-02 00:15:33 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-02 00:15:33 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-02 00:15:33 - core.ears - [32mINFO[0m - ✅ Voice input system started (State: standby)
+2025-11-02 00:15:33 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-02 00:15:38 - core.ears - [32mINFO[0m - 🎤 Heard: 'outer.' (State: standby)
+2025-11-02 00:15:42 - core.ears - [32mINFO[0m - 🎤 Heard: 'powder.' (State: standby)
+2025-11-02 00:15:46 - core.ears - [32mINFO[0m - 🎤 Heard: 'outer.' (State: standby)
+2025-11-02 00:15:48 - core.ears - [32mINFO[0m - 🎤 Heard: 'odor.' (State: standby)
+2025-11-02 00:15:54 - core.ears - [32mINFO[0m - 🎤 Heard: 'Oh, Audra.' (State: standby)
+2025-11-02 00:15:54 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'audra' matches 'aura' (distance: 1)
+2025-11-02 00:15:54 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-02 00:15:54 - core.voice_websocket - [32mINFO[0m - State changed: standby → listening
+2025-11-02 00:15:54 - core.voice_websocket - [32mINFO[0m - Wake word detected: Oh, Audra.
+2025-11-02 00:16:07 - core.ears - [32mINFO[0m - 🎤 Heard: 'Can you turn off the light?' (State: listening)
+2025-11-02 00:16:07 - core.voice_websocket - [32mINFO[0m - Command received: Can you turn off the light?
+2025-11-02 00:16:07 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-02 00:16:07 - core.voice_websocket - [32mINFO[0m - State changed: listening → processing
+2025-11-02 00:16:07 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-02 00:16:07 - core.voice_websocket - [32mINFO[0m - State changed: processing → speaking
+2025-11-02 00:16:08 - core.brain - [32mINFO[0m - Model requested 1 function call(s)
+2025-11-02 00:16:08 - core.brain - [32mINFO[0m - Executing function: turn_off_light({})
+2025-11-02 00:16:08 - core.brain - [31mERROR[0m - Error executing turn_off_light: This event loop is already running
+2025-11-02 00:16:10 - core.brain - [32mINFO[0m - Generated final response with function results
+2025-11-02 00:16:10 - core.mouth - [32mINFO[0m - Generating speech for text (length: 156)
+2025-11-02 00:16:13 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-02 00:16:13 - core.voice_websocket - [32mINFO[0m - State changed: speaking → listening
+2025-11-02 00:16:28 - core.voice_websocket - [32mINFO[0m - WebSocket disconnected
+2025-11-02 00:16:28 - core.ears - [32mINFO[0m - 🛑 Stopping voice input system...
+2025-11-02 00:16:28 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-02 00:16:28 - core.ears - [32mINFO[0m - ✅ Voice input system stopped
+2025-11-02 00:16:28 - core.voice_websocket - [32mINFO[0m - WebSocket connection closed
+2025-11-02 00:16:48 - core.voice_websocket - [32mINFO[0m - WebSocket connection established
+2025-11-02 00:16:48 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-02 00:16:48 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-02 00:16:48 - core.ears - [32mINFO[0m - ✅ Voice input system started (State: listening)
+2025-11-02 00:16:48 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-02 00:16:53 - core.ears - [32mINFO[0m - ⏱️ Auto-mute timeout (30s) - returning to standby
+2025-11-02 00:16:53 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-02 00:16:53 - core.voice_websocket - [32mINFO[0m - State changed: listening → standby
+2025-11-02 00:16:53 - core.voice_websocket - [32mINFO[0m - Mute detected: auto_timeout
+2025-11-02 00:17:08 - core.ears - [32mINFO[0m - 🎤 Heard: 'outer.' (State: standby)
+2025-11-02 00:17:13 - core.ears - [32mINFO[0m - 🎤 Heard: 'Until next time. Peace.' (State: standby)
+2025-11-02 00:17:17 - core.ears - [32mINFO[0m - 🎤 Heard: 'surface.' (State: standby)
+2025-11-02 00:17:21 - core.ears - [32mINFO[0m - 🎤 Heard: 'surface' (State: standby)
+2025-11-02 00:17:24 - core.ears - [32mINFO[0m - 🎤 Heard: 'surface.' (State: standby)
+2025-11-02 00:17:30 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hairpiece' (State: standby)
+2025-11-02 00:17:35 - core.ears - [32mINFO[0m - 🎤 Heard: 'powder.' (State: standby)
+2025-11-02 00:17:38 - core.ears - [32mINFO[0m - 🎤 Heard: 'Okay' (State: standby)
+2025-11-02 00:17:43 - core.ears - [32mINFO[0m - 🎤 Heard: 'Oura.' (State: standby)
+2025-11-02 00:17:43 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'oura' matches 'aura' (distance: 1)
+2025-11-02 00:17:43 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-02 00:17:43 - core.voice_websocket - [32mINFO[0m - State changed: standby → listening
+2025-11-02 00:17:43 - core.voice_websocket - [32mINFO[0m - Wake word detected: Oura.
+2025-11-02 00:17:49 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hello.' (State: listening)
+2025-11-02 00:17:49 - core.voice_websocket - [32mINFO[0m - Command received: Hello.
+2025-11-02 00:17:49 - core.ears - [32mINFO[0m - State changed: listening → processing
+2025-11-02 00:17:49 - core.voice_websocket - [32mINFO[0m - State changed: listening → processing
+2025-11-02 00:17:49 - core.ears - [32mINFO[0m - State changed: processing → speaking
+2025-11-02 00:17:49 - core.voice_websocket - [32mINFO[0m - State changed: processing → speaking
+2025-11-02 00:17:51 - core.brain - [32mINFO[0m - Generated direct response (no function calls)
+2025-11-02 00:17:51 - core.mouth - [32mINFO[0m - Generating speech for text (length: 43)
+2025-11-02 00:17:53 - core.ears - [32mINFO[0m - State changed: speaking → listening
+2025-11-02 00:17:53 - core.voice_websocket - [32mINFO[0m - State changed: speaking → listening
+2025-11-02 00:18:01 - core.voice_websocket - [32mINFO[0m - WebSocket disconnected
+2025-11-02 00:18:01 - core.ears - [32mINFO[0m - 🛑 Stopping voice input system...
+2025-11-02 00:18:01 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-02 00:18:01 - core.ears - [32mINFO[0m - ✅ Voice input system stopped
+2025-11-02 00:18:01 - core.voice_websocket - [32mINFO[0m - WebSocket connection closed

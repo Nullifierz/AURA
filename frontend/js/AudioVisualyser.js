@@ -280,9 +280,22 @@ function animate() {
     	simulatedFrequency += (targetFrequency - simulatedFrequency) * 0.1;
     	uniforms.u_frequency.value = simulatedFrequency;
     } else if (currentState === 'speaking') {
-    	// Use actual audio frequency when speaking
-    	uniforms.u_frequency.value = freq;
-    	simulatedFrequency = freq; // Track for smooth transition
+    	// Use actual audio frequency when speaking, or simulate if audio is playing from backend
+        if (freq > 5) {
+    	    uniforms.u_frequency.value = freq;
+            simulatedFrequency = freq; // Track for smooth transition
+        } else {
+            // Simulate speech waveform if no browser audio is detected (Backend TTS case)
+            // Create a more erratic "speech-like" pattern
+            const time = clock.getElapsedTime();
+            const noise = Math.random() * 40;
+            const wave1 = Math.sin(time * 10) * 20;
+            const wave2 = Math.cos(time * 23) * 10;
+            
+            targetFrequency = 40 + noise + wave1 + wave2;
+            simulatedFrequency += (targetFrequency - simulatedFrequency) * 0.15;
+            uniforms.u_frequency.value = simulatedFrequency;
+        }
     } else if (currentState === 'idle') {
     	// Fade out frequency when returning to idle
     	targetFrequency = 0;

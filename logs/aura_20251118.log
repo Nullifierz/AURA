@@ -1,0 +1,477 @@
+2025-11-18 12:37:49 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 12:37:49 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 12:37:50 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 12:37:50 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 12:37:50 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 12:39:29 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 12:39:29 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 12:39:30 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 12:39:30 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 12:39:30 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 12:39:51 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 12:39:51 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 12:39:51 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 12:39:51 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 12:39:51 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 12:39:51 - core.ears - [32mINFO[0m - Ears config loaded | wake_primary=['jarvis'], variations=[], threshold=0.65, model=small.en
+2025-11-18 12:39:51 - core.ears - [32mINFO[0m - Loading faster-whisper model: small.en on cpu (compute_type=int8)
+2025-11-18 12:39:54 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 12:39:54 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 12:39:54 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 12:39:54 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: jarvis
+2025-11-18 12:40:05 - core.ears - [32mINFO[0m - 🎤 Heard: 'Bye.' (State: standby)
+2025-11-18 12:40:06 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hello.' (State: standby)
+2025-11-18 12:40:07 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:40:11 - core.ears - [32mINFO[0m - 🎤 Heard: 'Ciao! Peace!' (State: standby)
+2025-11-18 12:40:12 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:40:14 - core.ears - [32mINFO[0m - 🎤 Heard: 'YAR PISS' (State: standby)
+2025-11-18 12:40:15 - core.ears - [32mINFO[0m - 🎤 Heard: '.' (State: standby)
+2025-11-18 12:40:19 - core.ears - [32mINFO[0m - 🎤 Heard: 'The ad face.' (State: standby)
+2025-11-18 12:40:20 - core.ears - [32mINFO[0m - 🎤 Heard: 'Good.' (State: standby)
+2025-11-18 12:40:21 - core.ears - [32mINFO[0m - 🎤 Heard: 'Peace.' (State: standby)
+2025-11-18 12:40:22 - core.ears - [32mINFO[0m - 🎤 Heard: '.' (State: standby)
+2025-11-18 12:40:24 - core.ears - [32mINFO[0m - 🎤 Heard: 'Chirpy' (State: standby)
+2025-11-18 12:40:25 - core.ears - [32mINFO[0m - 🎤 Heard: 'Peace!' (State: standby)
+2025-11-18 12:40:30 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jarpis' (State: standby)
+2025-11-18 12:40:30 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'jarpis' matches 'jarvis' (distance=1, max=2)
+2025-11-18 12:40:30 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 12:40:30 - __main__ - [32mINFO[0m - Wake callback: Jarpis
+2025-11-18 12:40:31 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:40:31 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:40:32 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:40:32 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:40:33 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:40:33 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:40:36 - core.ears - [32mINFO[0m - 🎤 Heard: 'Yeah, peace.' (State: listening)
+2025-11-18 12:40:36 - __main__ - [32mINFO[0m - Command callback: Yeah, peace.
+2025-11-18 12:40:37 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:40:37 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:40:39 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:40:39 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:40:44 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jaar peace!' (State: listening)
+2025-11-18 12:40:44 - __main__ - [32mINFO[0m - Command callback: Jaar peace!
+2025-11-18 12:40:46 - core.ears - [32mINFO[0m - 🎤 Heard: 'Giorpis' (State: listening)
+2025-11-18 12:40:46 - __main__ - [32mINFO[0m - Command callback: Giorpis
+2025-11-18 12:40:48 - core.ears - [32mINFO[0m - 🎤 Heard: 'your' (State: listening)
+2025-11-18 12:40:48 - __main__ - [32mINFO[0m - Command callback: your
+2025-11-18 12:40:49 - core.ears - [32mINFO[0m - 🎤 Heard: 'face.' (State: listening)
+2025-11-18 12:40:49 - __main__ - [32mINFO[0m - Command callback: face.
+2025-11-18 12:40:50 - core.ears - [32mINFO[0m - 🎤 Heard: 'your face' (State: listening)
+2025-11-18 12:40:50 - __main__ - [32mINFO[0m - Command callback: your face
+2025-11-18 12:40:56 - core.ears - [32mINFO[0m - 🎤 Heard: '...' (State: listening)
+2025-11-18 12:40:56 - __main__ - [32mINFO[0m - Command callback: ...
+2025-11-18 12:40:57 - core.ears - [32mINFO[0m - 🎤 Heard: 'your face' (State: listening)
+2025-11-18 12:40:57 - __main__ - [32mINFO[0m - Command callback: your face
+2025-11-18 12:40:58 - core.ears - [32mINFO[0m - 🎤 Heard: '.' (State: listening)
+2025-11-18 12:40:58 - __main__ - [32mINFO[0m - Command callback: .
+2025-11-18 12:40:59 - core.ears - [32mINFO[0m - 🎤 Heard: '.' (State: listening)
+2025-11-18 12:40:59 - __main__ - [32mINFO[0m - Command callback: .
+2025-11-18 12:41:00 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hello.' (State: listening)
+2025-11-18 12:41:00 - __main__ - [32mINFO[0m - Command callback: Hello.
+2025-11-18 12:41:02 - core.ears - [32mINFO[0m - 🎤 Heard: '.' (State: listening)
+2025-11-18 12:41:02 - __main__ - [32mINFO[0m - Command callback: .
+2025-11-18 12:41:03 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:41:03 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:41:05 - core.ears - [32mINFO[0m - 🎤 Heard: 'Turfis' (State: listening)
+2025-11-18 12:41:05 - __main__ - [32mINFO[0m - Command callback: Turfis
+2025-11-18 12:41:07 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:41:07 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:41:12 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jorphis' (State: listening)
+2025-11-18 12:41:12 - __main__ - [32mINFO[0m - Command callback: Jorphis
+2025-11-18 12:41:12 - core.ears - [32mINFO[0m - KeyboardInterrupt received, stopping ears...
+2025-11-18 12:44:44 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 12:44:44 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 12:44:44 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 12:44:44 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 12:44:44 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 12:44:44 - core.ears - [32mINFO[0m - Ears config loaded | wake_primary=['aura', 'aurora', 'jarvis'], variations=['ora', 'oda', 'arora', 'auora', 'ura'], threshold=0.65, model=medium.en
+2025-11-18 12:44:44 - core.ears - [32mINFO[0m - Loading faster-whisper model: medium.en on cuda (compute_type=float16)
+2025-11-18 12:44:48 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 12:44:48 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 12:44:48 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 12:44:48 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-18 12:44:53 - core.ears - [32mINFO[0m - 🎤 Heard: 'I'll see you next time.' (State: standby)
+2025-11-18 12:44:55 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:44:57 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:44:59 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:45:01 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:45:03 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:45:05 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:45:07 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:45:09 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:45:11 - core.ears - [32mINFO[0m - 🎤 Heard: 'I'll see you next time.' (State: standby)
+2025-11-18 12:45:13 - core.ears - [32mINFO[0m - KeyboardInterrupt received, stopping ears...
+2025-11-18 12:45:13 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-18 12:45:15 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 12:45:15 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 12:45:16 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 12:45:16 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 12:45:16 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 12:45:16 - core.ears - [32mINFO[0m - Loading faster-whisper model: medium.en on cuda (compute_type=float16)
+2025-11-18 12:45:18 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 12:45:18 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 12:45:18 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 12:45:18 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-18 12:45:22 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:45:24 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thanks for watching!' (State: standby)
+2025-11-18 12:45:26 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:45:28 - core.ears - [32mINFO[0m - 🎤 Heard: 'D-A-R-F-I-S' (State: standby)
+2025-11-18 12:45:32 - core.ears - [32mINFO[0m - 🎤 Heard: 'I'll see you guys. Bye. Bye.' (State: standby)
+2025-11-18 12:45:34 - core.ears - [32mINFO[0m - 🎤 Heard: 'To your face.' (State: standby)
+2025-11-18 12:45:36 - core.ears - [32mINFO[0m - 🎤 Heard: 'Your face.' (State: standby)
+2025-11-18 12:45:38 - core.ears - [32mINFO[0m - 🎤 Heard: 'Your face' (State: standby)
+2025-11-18 12:45:40 - core.ears - [32mINFO[0m - 🎤 Heard: 'Yeah, peace.' (State: standby)
+2025-11-18 12:45:43 - core.ears - [32mINFO[0m - 🎤 Heard: 'Your face.' (State: standby)
+2025-11-18 12:45:44 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:45:46 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jarvis' (State: standby)
+2025-11-18 12:45:46 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'jarvis'
+2025-11-18 12:45:46 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 12:45:46 - __main__ - [32mINFO[0m - Wake callback: Jarvis
+2025-11-18 12:45:48 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hello.' (State: listening)
+2025-11-18 12:45:48 - __main__ - [32mINFO[0m - Command callback: Hello.
+2025-11-18 12:45:50 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:45:50 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:45:52 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:45:52 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:45:54 - core.ears - [32mINFO[0m - 🎤 Heard: 'turn on the light' (State: listening)
+2025-11-18 12:45:54 - __main__ - [32mINFO[0m - Command callback: turn on the light
+2025-11-18 12:45:56 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:45:56 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:45:58 - core.ears - [32mINFO[0m - 🎤 Heard: 'mute' (State: listening)
+2025-11-18 12:45:58 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-18 12:45:58 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-18 12:45:58 - __main__ - [32mINFO[0m - Mute callback: mute
+2025-11-18 12:46:00 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:46:02 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:46:04 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:46:06 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:46:08 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:46:10 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:46:10 - core.ears - [32mINFO[0m - KeyboardInterrupt received, stopping ears...
+2025-11-18 12:46:10 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-18 12:56:43 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 12:56:43 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 12:56:43 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 12:56:43 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 12:56:43 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 12:56:43 - core.ears - [32mINFO[0m - Loading faster-whisper model: medium.en on cuda (compute_type=float16)
+2025-11-18 12:56:45 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 12:56:45 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 12:56:45 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 12:56:45 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-18 12:56:48 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:56:50 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:56:52 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:56:54 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:56:56 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:56:58 - core.ears - [32mINFO[0m - 🎤 Heard: 'Yeah, peace.' (State: standby)
+2025-11-18 12:57:00 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:57:02 - core.ears - [32mINFO[0m - 🎤 Heard: 'Your face.' (State: standby)
+2025-11-18 12:57:04 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:57:06 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:57:08 - core.ears - [32mINFO[0m - 🎤 Heard: 'Your face.' (State: standby)
+2025-11-18 12:57:10 - core.ears - [32mINFO[0m - 🎤 Heard: 'Go.' (State: standby)
+2025-11-18 12:57:12 - core.ears - [32mINFO[0m - 🎤 Heard: 'is' (State: standby)
+2025-11-18 12:57:14 - core.ears - [32mINFO[0m - 🎤 Heard: 'yeah' (State: standby)
+2025-11-18 12:57:16 - core.ears - [32mINFO[0m - 🎤 Heard: 'yeah' (State: standby)
+2025-11-18 12:57:18 - core.ears - [32mINFO[0m - 🎤 Heard: 'Your face.' (State: standby)
+2025-11-18 12:57:20 - core.ears - [32mINFO[0m - 🎤 Heard: 'Your peace.' (State: standby)
+2025-11-18 12:57:22 - core.ears - [32mINFO[0m - 🎤 Heard: 'Yeah.' (State: standby)
+2025-11-18 12:57:24 - core.ears - [32mINFO[0m - 🎤 Heard: 'Peace.' (State: standby)
+2025-11-18 12:57:26 - core.ears - [32mINFO[0m - 🎤 Heard: 'I didn't see dogs.' (State: standby)
+2025-11-18 12:57:30 - core.ears - [32mINFO[0m - 🎤 Heard: 'Oh my God.' (State: standby)
+2025-11-18 12:57:32 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:57:35 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jarf it!' (State: standby)
+2025-11-18 12:57:36 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:57:38 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jarvis.' (State: standby)
+2025-11-18 12:57:38 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'jarvis'
+2025-11-18 12:57:38 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 12:57:38 - __main__ - [32mINFO[0m - Wake callback: Jarvis.
+2025-11-18 12:57:40 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:57:40 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:57:42 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:57:42 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:57:44 - core.ears - [32mINFO[0m - 🎤 Heard: 'Turn on the light.' (State: listening)
+2025-11-18 12:57:44 - __main__ - [32mINFO[0m - Command callback: Turn on the light.
+2025-11-18 12:57:46 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:57:46 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:57:48 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:57:48 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:57:50 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:57:50 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:57:52 - core.ears - [32mINFO[0m - 🎤 Heard: 'mute' (State: listening)
+2025-11-18 12:57:52 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-18 12:57:52 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-18 12:57:52 - __main__ - [32mINFO[0m - Mute callback: mute
+2025-11-18 12:57:54 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:57:56 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:57:58 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:58:00 - core.ears - [32mINFO[0m - 🎤 Heard: 'Peace' (State: standby)
+2025-11-18 12:58:02 - core.ears - [32mINFO[0m - 🎤 Heard: 'Dorf is' (State: standby)
+2025-11-18 12:58:04 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thanks.' (State: standby)
+2025-11-18 12:58:06 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jarvis' (State: standby)
+2025-11-18 12:58:06 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'jarvis'
+2025-11-18 12:58:06 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 12:58:06 - __main__ - [32mINFO[0m - Wake callback: Jarvis
+2025-11-18 12:58:08 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:08 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:10 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:10 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:12 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:12 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:14 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jarvis' (State: listening)
+2025-11-18 12:58:14 - __main__ - [32mINFO[0m - Command callback: Jarvis
+2025-11-18 12:58:16 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:16 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:18 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:18 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:20 - core.ears - [32mINFO[0m - 🎤 Heard: 'mute' (State: listening)
+2025-11-18 12:58:20 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-18 12:58:20 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-18 12:58:20 - __main__ - [32mINFO[0m - Mute callback: mute
+2025-11-18 12:58:22 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:58:24 - core.ears - [32mINFO[0m - 🎤 Heard: 'DORPHYSS' (State: standby)
+2025-11-18 12:58:26 - core.ears - [32mINFO[0m - 🎤 Heard: 'Go' (State: standby)
+2025-11-18 12:58:28 - core.ears - [32mINFO[0m - 🎤 Heard: 'our face' (State: standby)
+2025-11-18 12:58:30 - core.ears - [32mINFO[0m - 🎤 Heard: 'Doris' (State: standby)
+2025-11-18 12:58:32 - core.ears - [32mINFO[0m - 🎤 Heard: 'George is' (State: standby)
+2025-11-18 12:58:36 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:58:38 - core.ears - [32mINFO[0m - 🎤 Heard: 'Please' (State: standby)
+2025-11-18 12:58:40 - core.ears - [32mINFO[0m - 🎤 Heard: '.' (State: standby)
+2025-11-18 12:58:42 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jarvis' (State: standby)
+2025-11-18 12:58:42 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'jarvis'
+2025-11-18 12:58:42 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 12:58:42 - __main__ - [32mINFO[0m - Wake callback: Jarvis
+2025-11-18 12:58:44 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:44 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:46 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:46 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:48 - core.ears - [32mINFO[0m - 🎤 Heard: 'Turn on the like please' (State: listening)
+2025-11-18 12:58:48 - __main__ - [32mINFO[0m - Command callback: Turn on the like please
+2025-11-18 12:58:50 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:50 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:52 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:52 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:54 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 12:58:54 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 12:58:56 - core.ears - [32mINFO[0m - 🎤 Heard: 'mute' (State: listening)
+2025-11-18 12:58:56 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-18 12:58:56 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-18 12:58:56 - __main__ - [32mINFO[0m - Mute callback: mute
+2025-11-18 12:58:58 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 12:58:58 - core.ears - [32mINFO[0m - KeyboardInterrupt received, stopping ears...
+2025-11-18 12:58:59 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-18 13:01:46 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 13:01:46 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 13:01:46 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 13:01:46 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 13:01:46 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 13:01:46 - core.ears - [32mINFO[0m - Loading faster-whisper model: medium.en on cuda (compute_type=float16)
+2025-11-18 13:01:48 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 13:01:48 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 13:01:48 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 13:01:48 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-18 13:02:47 - core.ears - [32mINFO[0m - KeyboardInterrupt received, stopping ears...
+2025-11-18 13:02:48 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-18 13:03:28 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 13:03:28 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 13:03:28 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 13:03:28 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 13:03:28 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 13:03:28 - core.ears - [32mINFO[0m - Loading faster-whisper model: medium.en on cuda (compute_type=float16)
+2025-11-18 13:03:30 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 13:03:30 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 13:03:30 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 13:03:30 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-18 13:03:35 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'jervis' matches 'jarvis' (distance=1, max=2)
+2025-11-18 13:03:35 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jervis.' (State: standby)
+2025-11-18 13:03:35 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 13:03:35 - __main__ - [32mINFO[0m - Wake callback: Jervis.
+2025-11-18 13:03:41 - core.ears - [32mINFO[0m - 🎤 Heard: 'So.' (State: listening)
+2025-11-18 13:03:41 - __main__ - [32mINFO[0m - Command callback: So.
+2025-11-18 13:03:42 - core.ears - [32mINFO[0m - 🎤 Heard: 'on the light.' (State: listening)
+2025-11-18 13:03:42 - __main__ - [32mINFO[0m - Command callback: on the light.
+2025-11-18 13:03:47 - core.ears - [32mINFO[0m - 🎤 Heard: 'Turn on the light' (State: listening)
+2025-11-18 13:03:47 - __main__ - [32mINFO[0m - Command callback: Turn on the light
+2025-11-18 13:03:51 - core.ears - [32mINFO[0m - 🎤 Heard: 'mute' (State: listening)
+2025-11-18 13:03:51 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-18 13:03:51 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-18 13:03:51 - __main__ - [32mINFO[0m - Mute callback: mute
+2025-11-18 13:04:54 - core.ears - [32mINFO[0m - KeyboardInterrupt received, stopping ears...
+2025-11-18 13:04:55 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-18 13:06:11 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 13:06:11 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 13:06:11 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 13:06:11 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 13:06:11 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 13:06:11 - core.ears - [32mINFO[0m - Loading faster-whisper model: medium.en on cuda (compute_type=float16)
+2025-11-18 13:06:13 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 13:06:13 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 13:06:13 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 13:06:13 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-18 13:06:28 - core.ears - [32mINFO[0m - KeyboardInterrupt received, stopping ears...
+2025-11-18 13:06:28 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-18 13:06:33 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 13:06:33 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 13:06:33 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 13:06:33 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 13:06:33 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 13:06:33 - core.ears - [32mINFO[0m - Loading faster-whisper model: medium.en on cuda (compute_type=float16)
+2025-11-18 13:06:35 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 13:06:35 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 13:06:35 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 13:06:35 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-18 13:07:06 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 13:07:06 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 13:07:06 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 13:07:06 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 13:07:06 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 13:07:06 - core.ears - [32mINFO[0m - Loading faster-whisper model: medium.en on cuda (compute_type=float16)
+2025-11-18 13:07:08 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 13:07:08 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 13:07:08 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 13:07:08 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-18 13:07:24 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'aurora'
+2025-11-18 13:07:24 - core.ears - [32mINFO[0m - 🎤 Heard: 'Aurora' (State: standby)
+2025-11-18 13:07:24 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 13:07:24 - __main__ - [32mINFO[0m - Wake callback: Aurora
+2025-11-18 13:07:31 - core.ears - [32mINFO[0m - 🎤 Heard: 'Turn on the light please.' (State: listening)
+2025-11-18 13:07:31 - __main__ - [32mINFO[0m - Command callback: Turn on the light please.
+2025-11-18 13:07:37 - core.ears - [32mINFO[0m - 🎤 Heard: 'Oh, well' (State: listening)
+2025-11-18 13:07:37 - __main__ - [32mINFO[0m - Command callback: Oh, well
+2025-11-18 13:07:43 - core.ears - [32mINFO[0m - 🎤 Heard: 'Keep mute.' (State: listening)
+2025-11-18 13:07:43 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-18 13:07:43 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-18 13:07:43 - __main__ - [32mINFO[0m - Mute callback: Keep mute.
+2025-11-18 13:08:04 - core.ears - [32mINFO[0m - ✅ Wake word detected (exact/variation): 'ora'
+2025-11-18 13:08:04 - core.ears - [32mINFO[0m - 🎤 Heard: 'Ora. Ora.' (State: standby)
+2025-11-18 13:08:04 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 13:08:04 - __main__ - [32mINFO[0m - Wake callback: Ora. Ora.
+2025-11-18 13:08:07 - core.ears - [32mINFO[0m - 🎤 Heard: 'Hope.' (State: listening)
+2025-11-18 13:08:07 - __main__ - [32mINFO[0m - Command callback: Hope.
+2025-11-18 13:08:15 - core.ears - [32mINFO[0m - 🎤 Heard: 'can you check the weather' (State: listening)
+2025-11-18 13:08:15 - __main__ - [32mINFO[0m - Command callback: can you check the weather
+2025-11-18 13:08:17 - core.ears - [32mINFO[0m - 🎤 Heard: 'in the fandom pls' (State: listening)
+2025-11-18 13:08:17 - __main__ - [32mINFO[0m - Command callback: in the fandom pls
+2025-11-18 13:08:22 - core.ears - [32mINFO[0m - KeyboardInterrupt received, stopping ears...
+2025-11-18 13:08:23 - core.ears - [32mINFO[0m - Audio processing loop stopped
+2025-11-18 13:13:31 - __main__ - [32mINFO[0m - Starting AURA application
+2025-11-18 13:13:31 - core.brain - [32mINFO[0m - Initializing Brain with gemini-2.5-flash
+2025-11-18 13:13:31 - core.brain - [32mINFO[0m - Loaded 18 tool declarations
+2025-11-18 13:13:31 - core.mouth - [32mINFO[0m - Initializing Mouth with model: cori
+2025-11-18 13:13:31 - core.mouth - [32mINFO[0m - Mouth initialized successfully
+2025-11-18 13:13:31 - core.ears - [32mINFO[0m - Loading faster-whisper model: medium.en on cuda (compute_type=float16)
+2025-11-18 13:13:33 - core.ears - [32mINFO[0m - Whisper model loaded successfully
+2025-11-18 13:13:33 - core.ears - [32mINFO[0m - Audio processing loop started
+2025-11-18 13:13:33 - core.ears - [32mINFO[0m - 🎧 Starting voice input system...
+2025-11-18 13:13:33 - core.ears - [32mINFO[0m - 💡 Say one of these to wake: aura, aurora, jarvis
+2025-11-18 13:13:37 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:13:42 - core.ears - [32mINFO[0m - 🎤 Heard: 'your face.' (State: standby)
+2025-11-18 13:13:45 - core.ears - [32mINFO[0m - 🎤 Heard: 'Yeah' (State: standby)
+2025-11-18 13:13:55 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jarvan' (State: standby)
+2025-11-18 13:13:55 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'jarvan' matches 'jarvis' (distance=2, max=2)
+2025-11-18 13:13:55 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 13:13:55 - __main__ - [32mINFO[0m - Wake callback: Jarvan
+2025-11-18 13:14:05 - core.ears - [32mINFO[0m - 🎤 Heard: 'He needs an under like in the office.' (State: listening)
+2025-11-18 13:14:05 - __main__ - [32mINFO[0m - Command callback: He needs an under like in the office.
+2025-11-18 13:14:14 - core.ears - [32mINFO[0m - 🎤 Heard: 'You need some underlie in the office.' (State: listening)
+2025-11-18 13:14:14 - __main__ - [32mINFO[0m - Command callback: You need some underlie in the office.
+2025-11-18 13:14:21 - core.ears - [32mINFO[0m - 🎤 Heard: 'Can you turn on the light in the office?' (State: listening)
+2025-11-18 13:14:21 - __main__ - [32mINFO[0m - Command callback: Can you turn on the light in the office?
+2025-11-18 13:14:40 - core.ears - [32mINFO[0m - 🎤 Heard: 'Okay, thank you.' (State: listening)
+2025-11-18 13:14:40 - __main__ - [32mINFO[0m - Command callback: Okay, thank you.
+2025-11-18 13:14:43 - core.ears - [32mINFO[0m - 🎤 Heard: 'mute' (State: listening)
+2025-11-18 13:14:43 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-18 13:14:43 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-18 13:14:43 - __main__ - [32mINFO[0m - Mute callback: mute
+2025-11-18 13:14:48 - core.ears - [32mINFO[0m - 🎤 Heard: 'Jervis.' (State: standby)
+2025-11-18 13:14:48 - core.ears - [32mINFO[0m - ✅ Wake word detected (fuzzy): 'jervis' matches 'jarvis' (distance=1, max=2)
+2025-11-18 13:14:48 - core.ears - [32mINFO[0m - State changed: standby → listening
+2025-11-18 13:14:48 - __main__ - [32mINFO[0m - Wake callback: Jervis.
+2025-11-18 13:14:58 - core.ears - [32mINFO[0m - 🎤 Heard: 'Okay, I need check the weather in Bando' (State: listening)
+2025-11-18 13:14:58 - __main__ - [32mINFO[0m - Command callback: Okay, I need check the weather in Bando
+2025-11-18 13:15:09 - core.ears - [32mINFO[0m - 🎤 Heard: 'no no no no no I mean check the weather in Bandu' (State: listening)
+2025-11-18 13:15:09 - __main__ - [32mINFO[0m - Command callback: no no no no no I mean check the weather in Bandu
+2025-11-18 13:15:22 - core.ears - [32mINFO[0m - 🎤 Heard: 'SI check the weather in band 2' (State: listening)
+2025-11-18 13:15:22 - __main__ - [32mINFO[0m - Command callback: SI check the weather in band 2
+2025-11-18 13:15:30 - core.ears - [32mINFO[0m - 🎤 Heard: 'Check the weather in Pandung' (State: listening)
+2025-11-18 13:15:30 - __main__ - [32mINFO[0m - Command callback: Check the weather in Pandung
+2025-11-18 13:15:34 - core.ears - [32mINFO[0m - 🎤 Heard: 'Bando' (State: listening)
+2025-11-18 13:15:34 - __main__ - [32mINFO[0m - Command callback: Bando
+2025-11-18 13:15:37 - core.ears - [32mINFO[0m - 🎤 Heard: 'Bend down' (State: listening)
+2025-11-18 13:15:37 - __main__ - [32mINFO[0m - Command callback: Bend down
+2025-11-18 13:15:42 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thanks for watching.' (State: listening)
+2025-11-18 13:15:42 - __main__ - [32mINFO[0m - Command callback: Thanks for watching.
+2025-11-18 13:15:59 - core.ears - [32mINFO[0m - 🎤 Heard: 'Way out.' (State: listening)
+2025-11-18 13:15:59 - __main__ - [32mINFO[0m - Command callback: Way out.
+2025-11-18 13:16:02 - core.ears - [32mINFO[0m - 🎤 Heard: 'well.' (State: listening)
+2025-11-18 13:16:02 - __main__ - [32mINFO[0m - Command callback: well.
+2025-11-18 13:16:06 - core.ears - [32mINFO[0m - 🎤 Heard: 'It kinda sucks.' (State: listening)
+2025-11-18 13:16:06 - __main__ - [32mINFO[0m - Command callback: It kinda sucks.
+2025-11-18 13:16:17 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 13:16:17 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 13:16:19 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: listening)
+2025-11-18 13:16:19 - __main__ - [32mINFO[0m - Command callback: Thank you. Thank you.
+2025-11-18 13:16:23 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: listening)
+2025-11-18 13:16:23 - __main__ - [32mINFO[0m - Command callback: you
+2025-11-18 13:16:28 - core.ears - [32mINFO[0m - 🎤 Heard: '. . . . .' (State: listening)
+2025-11-18 13:16:28 - __main__ - [32mINFO[0m - Command callback: . . . . .
+2025-11-18 13:16:36 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: listening)
+2025-11-18 13:16:36 - __main__ - [32mINFO[0m - Command callback: Thank you.
+2025-11-18 13:16:47 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: listening)
+2025-11-18 13:16:47 - __main__ - [32mINFO[0m - Command callback: Thank you. Thank you.
+2025-11-18 13:16:55 - core.ears - [32mINFO[0m - 🎤 Heard: 'You' (State: listening)
+2025-11-18 13:16:55 - __main__ - [32mINFO[0m - Command callback: You
+2025-11-18 13:16:56 - core.ears - [32mINFO[0m - 🎤 Heard: 'Mm-mm-mm-mm-mm-mm.' (State: listening)
+2025-11-18 13:16:56 - __main__ - [32mINFO[0m - Command callback: Mm-mm-mm-mm-mm-mm.
+2025-11-18 13:17:21 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: listening)
+2025-11-18 13:17:21 - __main__ - [32mINFO[0m - Command callback: Thank you. Thank you.
+2025-11-18 13:17:28 - core.ears - [32mINFO[0m - 🎤 Heard: 'it. Thank you.' (State: listening)
+2025-11-18 13:17:28 - __main__ - [32mINFO[0m - Command callback: it. Thank you.
+2025-11-18 13:17:29 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: listening)
+2025-11-18 13:17:29 - __main__ - [32mINFO[0m - Command callback: you
+2025-11-18 13:17:35 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: listening)
+2025-11-18 13:17:35 - __main__ - [32mINFO[0m - Command callback: you
+2025-11-18 13:18:00 - core.ears - [32mINFO[0m - 🎤 Heard: 'mute' (State: listening)
+2025-11-18 13:18:00 - core.ears - [32mINFO[0m - 🔇 Mute phrase detected: 'mute'
+2025-11-18 13:18:00 - core.ears - [32mINFO[0m - State changed: listening → standby
+2025-11-18 13:18:00 - __main__ - [32mINFO[0m - Mute callback: mute
+2025-11-18 13:18:35 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:18:47 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:18:49 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:18:55 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:18:59 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:19:02 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:19:05 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:19:12 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:19:16 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:19:25 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:19:37 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:19:43 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you. Thank you. Thank you.' (State: standby)
+2025-11-18 13:19:46 - core.ears - [32mINFO[0m - 🎤 Heard: 'I'll see you next time.' (State: standby)
+2025-11-18 13:19:47 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:19:52 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:20:04 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:20:35 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:20:41 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:20:44 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:20:47 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:20:58 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:21:33 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thanks for watching!' (State: standby)
+2025-11-18 13:21:43 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thanks for watching!' (State: standby)
+2025-11-18 13:21:45 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:21:50 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:21:56 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:22:02 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:22:12 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:22:27 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you. Thank you.' (State: standby)
+2025-11-18 13:22:35 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:22:38 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:22:39 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:22:42 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:22:45 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:23:01 - core.ears - [32mINFO[0m - 🎤 Heard: 'Thank you.' (State: standby)
+2025-11-18 13:23:09 - core.ears - [32mINFO[0m - 🎤 Heard: 'I'll see you next time.' (State: standby)
+2025-11-18 13:23:14 - core.ears - [32mINFO[0m - 🎤 Heard: 'you' (State: standby)
+2025-11-18 13:23:24 - core.ears - [32mINFO[0m - KeyboardInterrupt received, stopping ears...
+2025-11-18 13:23:24 - core.ears - [32mINFO[0m - Audio processing loop stopped

@@ -4,6 +4,8 @@ import io
 from pathlib import Path
 import base64
 import re
+import numpy as np
+import sounddevice as sd
 
 from core.logger import get_logger
 
@@ -98,6 +100,33 @@ class Mouth:
         logger.debug(f"Using first available model: {model_files[0].name}")
         return model_files[0]
     
+    def say(self, text: str):
+        """
+        Generate and play speech locally (blocking).
+        
+        Args:
+            text: The text to speak
+        """
+        if not text:
+            return
+
+        # 1. Generate raw PCM audio
+        raw_audio = self._generate_pcm(text)
+        if not raw_audio:
+            return
+
+        # 2. Convert to numpy for sounddevice
+        # Piper output is 16-bit mono 22050Hz
+        audio_array = np.frombuffer(raw_audio, dtype=np.int16)
+        
+        # 3. Play
+        logger.info("Playing audio...")
+        try:
+            sd.play(audio_array, samplerate=22050, blocking=True)
+            sd.wait() # Ensure it finishes
+        except Exception as e:
+            logger.error(f"Error playing audio: {e}")
+
     def speak(self, text):
         """
         Convert text to speech and return base64 encoded audio for frontend playback.
@@ -107,6 +136,23 @@ class Mouth:
             
         Returns:
             Base64 encoded WAV audio string, or None if error
+        """
+        raw_audio = self._generate_pcm(text)
+        if not raw_audio:
+            return None
+            
+        # Convert raw audio to WAV format
+        audio_data = self._raw_to_wav(raw_audio)
+        
+        # Encode to base64 for frontend
+        b64_audio = base64.b64encode(audio_data).decode('utf-8')
+        logger.debug(f"Base64 audio generated (size: {len(b64_audio)})")
+        
+        return b64_audio
+
+    def _generate_pcm(self, text: str) -> bytes:
+        """
+        Generate raw PCM audio from text using Piper.
         """
         if not text or text.strip() == "":
             logger.warning("Empty text provided to speak()")
@@ -148,14 +194,7 @@ class Mouth:
                 return None
             
             logger.debug("Audio generated successfully")
-            # Convert raw audio to WAV format
-            audio_data = self._raw_to_wav(stdout)
-            
-            # Encode to base64 for frontend
-            b64_audio = base64.b64encode(audio_data).decode('utf-8')
-            logger.debug(f"Base64 audio generated (size: {len(b64_audio)})")
-            
-            return b64_audio
+            return stdout
         
         except Exception as e:
             logger.error(f"Error in TTS: {e}", exc_info=True)
